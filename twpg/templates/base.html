@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fa" dir="rtl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>{% block title %}مرکز مدیریت استخراج تلوبیون{% endblock %}</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/vazirmatn@33.0.3/Vazirmatn-font-face.css" rel="stylesheet">
+<link href="{{base}}/static/dashboard.css" rel="stylesheet">
+<script>window.TWC_BASE={{base|tojson}};window.TWC_SECTION={{(section or '')|tojson}};</script>
+</head><body>
+<aside class="sidebar" id="sidebar" aria-label="فهرست اصلی">
+  <div class="brand"><div class="brand-mark"><i class="fas fa-satellite-dish"></i></div><div><strong>تلوبیون <span>کراولر</span></strong><small>مرکز مدیریت محتوای رسانه‌ای</small></div></div>
+  <div class="nav-label">مدیریت سامانه</div>
+  <nav class="main-nav">
+    <a class="nav-link {%if section=='dashboard'%}active{%endif%}" href="{{base}}/dashboard"><i class="fas fa-chart-pie"></i><span>داشبورد استخراج</span></a>
+    <a class="nav-link {%if section=='channels'%}active{%endif%}" href="{{base}}/channels"><i class="fas fa-tv"></i><span>شبکه‌ها و کانال‌ها</span></a>
+    <a class="nav-link {%if section=='archive'%}active{%endif%}" href="{{base}}/"><i class="fas fa-clapperboard"></i><span>آرشیو برنامه‌ها</span></a>
+  </nav>
+  <div class="sidebar-foot"><div class="online-indicator"><span class="signal-dot"></span> اتصال پایگاه‌داده برقرار</div><small>Python · PostgreSQL</small></div>
+</aside>
+<div class="shell" id="shell">
+<header class="topbar">
+  <div class="topbar-left"><button class="nav-toggle" id="navToggle" type="button" aria-label="باز کردن منو"><i class="fa-solid fa-bars"></i></button><div><span class="crumb">داشبورد مدیریتی / {%block crumb%}نمای کلی{%endblock%}</span><h1 class="top-title">{%block top_title%}پایش اطلاعات تلوبیون{%endblock%}</h1></div></div>
+  <div class="topbar-actions"><div class="live-chip"><span class="signal-dot"></span> به‌روزرسانی زنده <small id="lastUpdated">—</small></div><div class="avatar" title="مدیر سامانه"><i class="fa-solid fa-user-shield"></i></div><form method="post" action="{{base}}/logout" class="logout-form"><button title="خروج امن" class="icon-button" aria-label="خروج"><i class="fa-solid fa-right-from-bracket"></i></button></form></div>
+</header>
+<main class="main-content">{%block body%}{%endblock%}</main>
+<footer class="footer">سامانه مدیریت استخراج تلوبیون <span>·</span> آمار براساس رکوردهای ذخیره‌شده PostgreSQL</footer>
+</div>
+<script src="{{base}}/static/dashboard.js" defer></script>
+</body></html>

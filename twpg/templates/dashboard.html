@@ -1,0 +1,28 @@
+{%extends 'base.html'%}{%block title%}داشبورد استخراج | تلوبیون{%endblock%}{%block crumb%}داشبورد استخراج{%endblock%}{%block top_title%}داشبورد استخراج محتوا{%endblock%}{%block body%}
+<section class="page-intro"><div><div class="eyebrow"><i class="fa-solid fa-circle-nodes"></i> نمای زنده سامانه</div><h2>پایش استخراج شبکه‌ها</h2><p>محتوای ثبت‌شده، فعالیت جاری و برنامه‌های باقی‌مانده را از یکجا مدیریت کنید.</p></div><div class="intro-controls"><span class="state-label {%if stats.enabled%}running{%else%}paused{%endif%}" id="crawlerState"><span class="signal-dot"></span><span id="crawlerStateText">{{'استخراج مجاز' if stats.enabled else 'استخراج متوقف'}}</span></span><button class="btn-outline-soft" onclick="control('pause')"><i class="fa-solid fa-pause"></i> توقف</button><button class="btn-primary-custom" onclick="control('resume')"><i class="fa-solid fa-play"></i> ادامه استخراج</button></div></section>
+<section class="metric-grid">
+ <div class="metric-card violet"><div class="metric-top"><span>قسمت‌های استخراج‌شده</span><span class="metric-icon"><i class="fa-solid fa-film"></i></span></div><strong data-stat="episodes">{{num(stats.episodes)}}</strong><small><i class="fa-solid fa-database"></i> تعداد قسمت‌های ذخیره‌شده</small></div>
+ <div class="metric-card cyan"><div class="metric-top"><span>کلیپ‌های استخراج‌شده</span><span class="metric-icon"><i class="fa-solid fa-video"></i></span></div><strong data-stat="clips">{{num(stats.clips)}}</strong><small><i class="fa-solid fa-chart-line"></i> تعداد کلیپ‌های ذخیره‌شده</small></div>
+ <div class="metric-card amber"><div class="metric-top"><span>برنامه‌های نیازمند ادامه</span><span class="metric-icon"><i class="fa-solid fa-hourglass-half"></i></span></div><strong data-stat="unresolved">{{num(stats.unresolved)}}</strong><small>در انتظار، ناقص، خطادار یا در حال اجرا</small></div>
+ <div class="metric-card blue"><div class="metric-top"><span>برنامه‌های شناسایی‌شده</span><span class="metric-icon"><i class="fa-solid fa-layer-group"></i></span></div><strong data-stat="programs">{{num(stats.programs)}}</strong><small><span data-stat="channels">{{num(stats.channels)}}</span> شبکه و دسته</small></div>
+</section>
+<section class="metric-strip">
+ <div><span class="signal-dot"></span> در حال اجرا <strong data-job="running">{{num(stats.job_states.get('running',0))}}</strong></div>
+ <div>در انتظار <strong data-job="pending">{{num(stats.job_states.get('pending',0))}}</strong></div>
+ <div>استخراج ناقص <strong data-job="partial">{{num(stats.job_states.get('partial',0))}}</strong></div>
+ <div>تکمیل‌شده <strong data-job="done">{{num(stats.job_states.get('done',0))}}</strong></div>
+ <div>نیازمند بررسی <strong data-job="empty_review">{{num(stats.job_states.get('empty_review',0))}}</strong></div>
+</section>
+<div class="content-layout"><section class="surface activity-section"><div class="section-heading"><div><span class="eyebrow">فعالیت استخراج</span><h3>کدام شبکه، کدام برنامه؟</h3><p>وضعیت پردازش هر برنامه و تعداد قسمت‌ها و کلیپ‌های کشف‌شده</p></div><div class="section-heading-icon"><i class="fa-solid fa-list-check"></i></div></div>
+<form method="get" action="{{base}}/dashboard" class="filters-grid" id="activityFilters">
+<div class="search-field"><i class="fa-solid fa-magnifying-glass"></i><input name="q" value="{{q}}" placeholder="جست‌وجوی شبکه یا عنوان برنامه" aria-label="جست‌وجوی برنامه"></div>
+<select name="channel" aria-label="فیلتر شبکه"><option value="">تمام شبکه‌ها</option>{%for c in channels%}<option value="{{c.slug}}" {%if channel==c.slug%}selected{%endif%}>{{c.name}}</option>{%endfor%}</select>
+<select name="status" aria-label="فیلتر وضعیت"><option value="">همه وضعیت‌های فعال</option>{%for s in ['running','pending','partial','done','failed','empty_review']%}<option value="{{s}}" {%if status==s%}selected{%endif%}>{{status_label(s)}}</option>{%endfor%}</select>
+<button type="submit" class="btn-primary-custom"><i class="fa-solid fa-filter"></i> اعمال</button>
+</form>
+<div class="table-scroll"><table class="data-table"><thead><tr><th>شبکه / کانال</th><th>برنامه</th><th>وضعیت</th><th>قسمت</th><th>کلیپ</th><th>تلاش</th><th>آخرین تغییر</th></tr></thead><tbody id="liveJobs">
+{%for j in recent%}<tr><td class="network-cell">{{j.networks}}</td><td><a class="name-link" href="{{base}}/program/{{j.program_key|urlencode}}">{{j.name}}</a></td><td><span class="pill st-{{j.status}}">{{status_label(j.status)}}</span></td><td>{{num(j.episodes_found)}}</td><td>{{num(j.clips_found)}}</td><td>{{j.attempts}}</td><td class="muted">{{j.updated_at or '—'}}</td></tr>{%else%}<tr><td colspan="7" class="empty">موردی با فیلتر انتخاب‌شده یافت نشد.</td></tr>{%endfor%}
+</tbody></table></div><p class="footnote">فهرست حداکثر ۸۰ برنامه مرتبط را نشان می‌دهد و هر ۱۲ ثانیه به‌روز می‌شود. <span id="activityLive"></span></p></section>
+<aside class="surface secondary-surface"><div class="section-heading"><div><span class="eyebrow">ردیابی عملیات</span><h3>آخرین رویدادها</h3></div><i class="fa-solid fa-wave-square mini-glyph"></i></div><div class="event-list">{%for e in events%}<div class="event-item"><div class="event-dot {%if e.level=='error'%}bad{%endif%}"></div><div><p>{{e.message}}</p><small>{{e.at}}</small></div></div>{%else%}<p class="muted">رویدادی ثبت نشده است.</p>{%endfor%}</div></aside></div>
+<script>window.TWC_LIVE_SCOPE='dashboard';window.TWC_FILTERS={{ {'q':q,'channel':channel,'status':status}|tojson }};</script>
+{%endblock%}

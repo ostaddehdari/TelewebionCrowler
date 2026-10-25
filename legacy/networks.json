@@ -1,0 +1,632 @@
+[
+  {
+    "slug": "tv1",
+    "name": "شبکه ۱",
+    "category": "سراسری",
+    "programs_url": "https://telewebion.net/channel/tv1/programs",
+    "channel_url": "https://telewebion.net/channel/tv1",
+    "logo_url": "https://i.imgur.com/rad9Guw.png",
+    "logo_fallback": "assets/tv1.svg"
+  },
+  {
+    "slug": "tv2",
+    "name": "شبکه ۲",
+    "category": "سراسری",
+    "programs_url": "https://telewebion.net/channel/tv2/programs",
+    "channel_url": "https://telewebion.net/channel/tv2",
+    "logo_url": "https://i.imgur.com/FKiTd3O.png",
+    "logo_fallback": "assets/tv2.svg"
+  },
+  {
+    "slug": "tv3",
+    "name": "شبکه ۳",
+    "category": "سراسری",
+    "programs_url": "https://telewebion.net/channel/tv3/programs",
+    "channel_url": "https://telewebion.net/channel/tv3",
+    "logo_url": "https://i.imgur.com/6cIaH0c.png",
+    "logo_fallback": "assets/tv3.svg"
+  },
+  {
+    "slug": "tv4",
+    "name": "شبکه ۴",
+    "category": "سراسری",
+    "programs_url": "https://telewebion.net/channel/tv4/programs",
+    "channel_url": "https://telewebion.net/channel/tv4",
+    "logo_url": "https://i.imgur.com/fsdz81l.png",
+    "logo_fallback": "assets/tv4.svg"
+  },
+  {
+    "slug": "nasim",
+    "name": "نسیم",
+    "category": "سراسری",
+    "programs_url": "https://telewebion.net/channel/nasim/programs",
+    "channel_url": "https://telewebion.net/channel/nasim",
+    "logo_url": "https://i.imgur.com/EqjQN83.png",
+    "logo_fallback": "assets/nasim.svg"
+  },
+  {
+    "slug": "irinn",
+    "name": "خبر",
+    "category": "سراسری",
+    "programs_url": "https://telewebion.net/channel/irinn/programs",
+    "channel_url": "https://telewebion.net/channel/irinn",
+    "logo_url": "https://i.imgur.com/7HL4joq.png",
+    "logo_fallback": "assets/irinn.svg"
+  },
+  {
+    "slug": "varzesh",
+    "name": "ورزش",
+    "category": "سراسری",
+    "programs_url": "https://telewebion.net/channel/varzesh/programs",
+    "channel_url": "https://telewebion.net/channel/varzesh",
+    "logo_url": "https://i.imgur.com/tRLSrxa.png",
+    "logo_fallback": "assets/varzesh.svg"
+  },
+  {
+    "slug": "hdtest",
+    "name": "تماشا",
+    "category": "سراسری",
+    "programs_url": "https://telewebion.net/channel/hdtest/programs",
+    "channel_url": "https://telewebion.net/channel/hdtest",
+    "logo_url": "https://i.imgur.com/YffSCWH.png",
+    "logo_fallback": "assets/hdtest.svg"
+  },
+  {
+    "slug": "pooya",
+    "name": "پویا",
+    "category": "سراسری",
+    "programs_url": "https://telewebion.net/channel/pooya/programs",
+    "channel_url": "https://telewebion.net/channel/pooya",
+    "logo_url": "https://i.imgur.com/hjeQUtg.png",
+    "logo_fallback": "assets/pooya.svg"
+  },
+  {
+    "slug": "ifilm",
+    "name": "آی‌فیلم",
+    "category": "سراسری",
+    "programs_url": "https://telewebion.net/channel/ifilm/programs",
+    "channel_url": "https://telewebion.net/channel/ifilm",
+    "logo_url": "https://i.imgur.com/4Z9L1AW.png",
+    "logo_fallback": "assets/ifilm.svg"
+  },
+  {
+    "slug": "namayesh",
+    "name": "نمایش",
+    "category": "سراسری",
+    "programs_url": "https://telewebion.net/channel/namayesh/programs",
+    "channel_url": "https://telewebion.net/channel/namayesh",
+    "logo_url": "https://i.imgur.com/Nq0pCGr.png",
+    "logo_fallback": "assets/namayesh.svg"
+  },
+  {
+    "slug": "tehran",
+    "name": "شبکه تهران (۵)",
+    "category": "سراسری",
+    "programs_url": "https://telewebion.net/channel/tehran/programs",
+    "channel_url": "https://telewebion.net/channel/tehran",
+    "logo_url": "https://i.imgur.com/VdOFcN4.png",
+    "logo_fallback": "assets/tehran.svg"
+  },
+  {
+    "slug": "mostanad",
+    "name": "مستند",
+    "category": "سراسری",
+    "programs_url": "https://telewebion.net/channel/mostanad/programs",
+    "channel_url": "https://telewebion.net/channel/mostanad",
+    "logo_url": "https://i.imgur.com/lRDgugZ.png",
+    "logo_fallback": "assets/mostanad.svg"
+  },
+  {
+    "slug": "quran",
+    "name": "قرآن",
+    "category": "سراسری",
+    "programs_url": "https://telewebion.net/channel/quran/programs",
+    "channel_url": "https://telewebion.net/channel/quran",
+    "logo_url": "https://i.imgur.com/nmOKBaK.png",
+    "logo_fallback": "assets/quran.svg"
+  },
+  {
+    "slug": "amouzesh",
+    "name": "آموزش",
+    "category": "سراسری",
+    "programs_url": "https://telewebion.net/channel/amouzesh/programs",
+    "channel_url": "https://telewebion.net/channel/amouzesh",
+    "logo_url": "https://i.imgur.com/qox2azH.png",
+    "logo_fallback": "assets/amouzesh.svg"
+  },
+  {
+    "slug": "salamat",
+    "name": "سلامت",
+    "category": "سراسری",
+    "programs_url": "https://telewebion.net/channel/salamat/programs",
+    "channel_url": "https://telewebion.net/channel/salamat",
+    "logo_url": "https://i.imgur.com/K0YUhne.png",
+    "logo_fallback": "assets/salamat.svg"
+  },
+  {
+    "slug": "ofogh",
+    "name": "افق",
+    "category": "سراسری",
+    "programs_url": "https://telewebion.net/channel/ofogh/programs",
+    "channel_url": "https://telewebion.net/channel/ofogh",
+    "logo_url": "https://i.imgur.com/fhqeYGb.png",
+    "logo_fallback": "assets/ofogh.svg"
+  },
+  {
+    "slug": "omid",
+    "name": "امید",
+    "category": "سراسری",
+    "programs_url": "https://telewebion.net/channel/omid/programs",
+    "channel_url": "https://telewebion.net/channel/omid",
+    "logo_url": "https://i.imgur.com/s9iUe1l.png",
+    "logo_fallback": "assets/omid.svg"
+  },
+  {
+    "slug": "faratar",
+    "name": "فراتر (۴K)",
+    "category": "سراسری",
+    "programs_url": "https://telewebion.net/channel/faratar/programs",
+    "channel_url": "https://telewebion.net/channel/faratar",
+    "logo_url": "https://i.imgur.com/qZ98jaa.png",
+    "logo_fallback": "assets/faratar.svg"
+  },
+  {
+    "slug": "irinn2",
+    "name": "خبر ۲",
+    "category": "سراسری",
+    "programs_url": "https://telewebion.net/channel/irinn2/programs",
+    "channel_url": "https://telewebion.net/channel/irinn2",
+    "logo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/IRIB%20IRINN%202%20Logo%202025.png",
+    "logo_fallback": "assets/irinn2.svg"
+  },
+  {
+    "slug": "azarbayjangharbi",
+    "name": "آذربایجان غربی",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/azarbayjangharbi/programs",
+    "channel_url": "https://telewebion.net/channel/azarbayjangharbi",
+    "logo_url": "",
+    "logo_fallback": "assets/azarbayjangharbi.svg"
+  },
+  {
+    "slug": "sahand",
+    "name": "سهند",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/sahand/programs",
+    "channel_url": "https://telewebion.net/channel/sahand",
+    "logo_url": "",
+    "logo_fallback": "assets/sahand.svg"
+  },
+  {
+    "slug": "alborz",
+    "name": "البرز",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/alborz/programs",
+    "channel_url": "https://telewebion.net/channel/alborz",
+    "logo_url": "",
+    "logo_fallback": "assets/alborz.svg"
+  },
+  {
+    "slug": "esfahan",
+    "name": "اصفهان",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/esfahan/programs",
+    "channel_url": "https://telewebion.net/channel/esfahan",
+    "logo_url": "",
+    "logo_fallback": "assets/esfahan.svg"
+  },
+  {
+    "slug": "sabalan",
+    "name": "سبلان",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/sabalan/programs",
+    "channel_url": "https://telewebion.net/channel/sabalan",
+    "logo_url": "",
+    "logo_fallback": "assets/sabalan.svg"
+  },
+  {
+    "slug": "ilam",
+    "name": "ایلام",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/ilam/programs",
+    "channel_url": "https://telewebion.net/channel/ilam",
+    "logo_url": "",
+    "logo_fallback": "assets/ilam.svg"
+  },
+  {
+    "slug": "bushehr",
+    "name": "بوشهر",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/bushehr/programs",
+    "channel_url": "https://telewebion.net/channel/bushehr",
+    "logo_url": "",
+    "logo_fallback": "assets/bushehr.svg"
+  },
+  {
+    "slug": "jahanbin",
+    "name": "جهانبین",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/jahanbin/programs",
+    "channel_url": "https://telewebion.net/channel/jahanbin",
+    "logo_url": "",
+    "logo_fallback": "assets/jahanbin.svg"
+  },
+  {
+    "slug": "abadan",
+    "name": "آبادان",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/abadan/programs",
+    "channel_url": "https://telewebion.net/channel/abadan",
+    "logo_url": "",
+    "logo_fallback": "assets/abadan.svg"
+  },
+  {
+    "slug": "khorasanrazavi",
+    "name": "خراسان رضوی",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/khorasanrazavi/programs",
+    "channel_url": "https://telewebion.net/channel/khorasanrazavi",
+    "logo_url": "",
+    "logo_fallback": "assets/khorasanrazavi.svg"
+  },
+  {
+    "slug": "atrak",
+    "name": "اترک",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/atrak/programs",
+    "channel_url": "https://telewebion.net/channel/atrak",
+    "logo_url": "",
+    "logo_fallback": "assets/atrak.svg"
+  },
+  {
+    "slug": "khalijefars",
+    "name": "خلیج فارس",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/khalijefars/programs",
+    "channel_url": "https://telewebion.net/channel/khalijefars",
+    "logo_url": "",
+    "logo_fallback": "assets/khalijefars.svg"
+  },
+  {
+    "slug": "khoozestan",
+    "name": "خوزستان",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/khoozestan/programs",
+    "channel_url": "https://telewebion.net/channel/khoozestan",
+    "logo_url": "",
+    "logo_fallback": "assets/khoozestan.svg"
+  },
+  {
+    "slug": "eshragh",
+    "name": "اشراق",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/eshragh/programs",
+    "channel_url": "https://telewebion.net/channel/eshragh",
+    "logo_url": "",
+    "logo_fallback": "assets/eshragh.svg"
+  },
+  {
+    "slug": "semnan",
+    "name": "سمنان",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/semnan/programs",
+    "channel_url": "https://telewebion.net/channel/semnan",
+    "logo_url": "",
+    "logo_fallback": "assets/semnan.svg"
+  },
+  {
+    "slug": "hamoon",
+    "name": "هامون",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/hamoon/programs",
+    "channel_url": "https://telewebion.net/channel/hamoon",
+    "logo_url": "",
+    "logo_fallback": "assets/hamoon.svg"
+  },
+  {
+    "slug": "fars",
+    "name": "فارس",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/fars/programs",
+    "channel_url": "https://telewebion.net/channel/fars",
+    "logo_url": "",
+    "logo_fallback": "assets/fars.svg"
+  },
+  {
+    "slug": "qazvin",
+    "name": "قزوین",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/qazvin/programs",
+    "channel_url": "https://telewebion.net/channel/qazvin",
+    "logo_url": "",
+    "logo_fallback": "assets/qazvin.svg"
+  },
+  {
+    "slug": "noor",
+    "name": "نور",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/noor/programs",
+    "channel_url": "https://telewebion.net/channel/noor",
+    "logo_url": "",
+    "logo_fallback": "assets/noor.svg"
+  },
+  {
+    "slug": "aflak",
+    "name": "لرستان (افلاک)",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/aflak/programs",
+    "channel_url": "https://telewebion.net/channel/aflak",
+    "logo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lorestan-TV.jpg",
+    "logo_fallback": "assets/aflak.svg"
+  },
+  {
+    "slug": "kerman",
+    "name": "کرمان",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/kerman/programs",
+    "channel_url": "https://telewebion.net/channel/kerman",
+    "logo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kerman%20irib%20logo.png",
+    "logo_fallback": "assets/kerman.svg"
+  },
+  {
+    "slug": "zagros",
+    "name": "زاگرس",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/zagros/programs",
+    "channel_url": "https://telewebion.net/channel/zagros",
+    "logo_url": "",
+    "logo_fallback": "assets/zagros.svg"
+  },
+  {
+    "slug": "dena",
+    "name": "دنا",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/dena/programs",
+    "channel_url": "https://telewebion.net/channel/dena",
+    "logo_url": "",
+    "logo_fallback": "assets/dena.svg"
+  },
+  {
+    "slug": "kish",
+    "name": "کیش",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/kish/programs",
+    "channel_url": "https://telewebion.net/channel/kish",
+    "logo_url": "",
+    "logo_fallback": "assets/kish.svg"
+  },
+  {
+    "slug": "sabz",
+    "name": "گلستان",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/sabz/programs",
+    "channel_url": "https://telewebion.net/channel/sabz",
+    "logo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Logo%20Golestan.png",
+    "logo_fallback": "assets/sabz.svg"
+  },
+  {
+    "slug": "baran",
+    "name": "باران",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/baran/programs",
+    "channel_url": "https://telewebion.net/channel/baran",
+    "logo_url": "",
+    "logo_fallback": "assets/baran.svg"
+  },
+  {
+    "slug": "kordestan",
+    "name": "کردستان",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/kordestan/programs",
+    "channel_url": "https://telewebion.net/channel/kordestan",
+    "logo_url": "",
+    "logo_fallback": "assets/kordestan.svg"
+  },
+  {
+    "slug": "taban",
+    "name": "یزد (تابان)",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/taban/programs",
+    "channel_url": "https://telewebion.net/channel/taban",
+    "logo_url": "",
+    "logo_fallback": "assets/taban.svg"
+  },
+  {
+    "slug": "tabarestan",
+    "name": "تبرستان",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/tabarestan/programs",
+    "channel_url": "https://telewebion.net/channel/tabarestan",
+    "logo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/IRIB%20Mazandaran%20White%20Logo.png",
+    "logo_fallback": "assets/tabarestan.svg"
+  },
+  {
+    "slug": "aftab",
+    "name": "آفتاب",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/aftab/programs",
+    "channel_url": "https://telewebion.net/channel/aftab",
+    "logo_url": "",
+    "logo_fallback": "assets/aftab.svg"
+  },
+  {
+    "slug": "mahabad",
+    "name": "مهاباد",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/mahabad/programs",
+    "channel_url": "https://telewebion.net/channel/mahabad",
+    "logo_url": "",
+    "logo_fallback": "assets/mahabad.svg"
+  },
+  {
+    "slug": "sina",
+    "name": "همدان (سینا)",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/sina/programs",
+    "channel_url": "https://telewebion.net/channel/sina",
+    "logo_url": "",
+    "logo_fallback": "assets/sina.svg"
+  },
+  {
+    "slug": "khavaran",
+    "name": "خاوران",
+    "category": "استانی",
+    "programs_url": "https://telewebion.net/channel/khavaran/programs",
+    "channel_url": "https://telewebion.net/channel/khavaran",
+    "logo_url": "",
+    "logo_fallback": "assets/khavaran.svg"
+  },
+  {
+    "slug": "tv1plus",
+    "name": "مثبت یک",
+    "category": "اختصاصی",
+    "programs_url": "https://telewebion.net/channel/tv1plus/programs",
+    "channel_url": "https://telewebion.net/channel/tv1plus",
+    "logo_url": "",
+    "logo_fallback": "assets/tv1plus.svg"
+  },
+  {
+    "slug": "habib",
+    "name": "حبیب",
+    "category": "اختصاصی",
+    "programs_url": "https://telewebion.net/channel/habib/programs",
+    "channel_url": "https://telewebion.net/channel/habib",
+    "logo_url": "",
+    "logo_fallback": "assets/habib.svg"
+  },
+  {
+    "slug": "golkhane",
+    "name": "گلخانه",
+    "category": "اختصاصی",
+    "programs_url": "https://telewebion.net/channel/golkhane/programs",
+    "channel_url": "https://telewebion.net/channel/golkhane",
+    "logo_url": "",
+    "logo_fallback": "assets/golkhane.svg"
+  },
+  {
+    "slug": "labbayk",
+    "name": "لبیک",
+    "category": "اختصاصی",
+    "programs_url": "https://telewebion.net/channel/labbayk/programs",
+    "channel_url": "https://telewebion.net/channel/labbayk",
+    "logo_url": "",
+    "logo_fallback": "assets/labbayk.svg"
+  },
+  {
+    "slug": "iribu",
+    "name": "رویا",
+    "category": "اختصاصی",
+    "programs_url": "https://telewebion.net/channel/iribu/programs",
+    "channel_url": "https://telewebion.net/channel/iribu",
+    "logo_url": "",
+    "logo_fallback": "assets/iribu.svg"
+  },
+  {
+    "slug": "razavi",
+    "name": "رضوی",
+    "category": "اختصاصی",
+    "programs_url": "https://telewebion.net/channel/razavi/programs",
+    "channel_url": "https://telewebion.net/channel/razavi",
+    "logo_url": "",
+    "logo_fallback": "assets/razavi.svg"
+  },
+  {
+    "slug": "velayat",
+    "name": "ولایت",
+    "category": "اختصاصی",
+    "programs_url": "https://telewebion.net/channel/velayat/programs",
+    "channel_url": "https://telewebion.net/channel/velayat",
+    "logo_url": "",
+    "logo_fallback": "assets/velayat.svg"
+  },
+  {
+    "slug": "sport1",
+    "name": "تلوبیون اسپرت ۱",
+    "category": "اختصاصی",
+    "programs_url": "https://telewebion.net/channel/sport1/programs",
+    "channel_url": "https://telewebion.net/channel/sport1",
+    "logo_url": "",
+    "logo_fallback": "assets/sport1.svg"
+  },
+  {
+    "slug": "sport2",
+    "name": "تلوبیون اسپرت ۲",
+    "category": "اختصاصی",
+    "programs_url": "https://telewebion.net/channel/sport2/programs",
+    "channel_url": "https://telewebion.net/channel/sport2",
+    "logo_url": "",
+    "logo_fallback": "assets/sport2.svg"
+  },
+  {
+    "slug": "sport3",
+    "name": "تلوبیون اسپرت ۳",
+    "category": "اختصاصی",
+    "programs_url": "https://telewebion.net/channel/sport3/programs",
+    "channel_url": "https://telewebion.net/channel/sport3",
+    "logo_url": "",
+    "logo_fallback": "assets/sport3.svg"
+  },
+  {
+    "slug": "basij",
+    "name": "بسیج",
+    "category": "اختصاصی",
+    "programs_url": "https://telewebion.net/channel/basij/programs",
+    "channel_url": "https://telewebion.net/channel/basij",
+    "logo_url": "",
+    "logo_fallback": "assets/basij.svg"
+  },
+  {
+    "slug": "nesfejahan",
+    "name": "نصف جهان",
+    "category": "اختصاصی",
+    "programs_url": "https://telewebion.net/channel/nesfejahan/programs",
+    "channel_url": "https://telewebion.net/channel/nesfejahan",
+    "logo_url": "",
+    "logo_fallback": "assets/nesfejahan.svg"
+  },
+  {
+    "slug": "makran",
+    "name": "مکران",
+    "category": "اختصاصی",
+    "programs_url": "https://telewebion.net/channel/makran/programs",
+    "channel_url": "https://telewebion.net/channel/makran",
+    "logo_url": "",
+    "logo_fallback": "assets/makran.svg"
+  },
+  {
+    "slug": "caspian",
+    "name": "کاسپین",
+    "category": "اختصاصی",
+    "programs_url": "https://telewebion.net/channel/caspian/programs",
+    "channel_url": "https://telewebion.net/channel/caspian",
+    "logo_url": "",
+    "logo_fallback": "assets/caspian.svg"
+  },
+  {
+    "slug": "kawthar",
+    "name": "الکوثر",
+    "category": "برون‌مرزی",
+    "programs_url": "https://telewebion.net/channel/kawthar/programs",
+    "channel_url": "https://telewebion.net/channel/kawthar",
+    "logo_url": "https://i.imgur.com/kKAKqd5.png",
+    "logo_fallback": "assets/kawthar.svg"
+  },
+  {
+    "slug": "presstv",
+    "name": "پرس تی‌وی",
+    "category": "برون‌مرزی",
+    "programs_url": "https://telewebion.net/channel/presstv/programs",
+    "channel_url": "https://telewebion.net/channel/presstv",
+    "logo_url": "https://i.imgur.com/X3YP2Gg.png",
+    "logo_fallback": "assets/presstv.svg"
+  },
+  {
+    "slug": "alalam",
+    "name": "العالم",
+    "category": "برون‌مرزی",
+    "programs_url": "https://telewebion.net/channel/alalam/programs",
+    "channel_url": "https://telewebion.net/channel/alalam",
+    "logo_url": "https://i.imgur.com/UbD0Ndr.png",
+    "logo_fallback": "assets/alalam.svg"
+  }
+]

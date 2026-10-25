@@ -1,13 +1,7 @@
-# Telewebion Crawler / PostgreSQL
+# TelewebionCrowler — Python / PostgreSQL
 
-Python crawler and dashboard for Telewebion metadata backed by PostgreSQL 18.
+Persian-language metadata catalog and resumable Playwright crawler, ported from the user's real SQLite snapshot (October 2026). Keeps original program and media identifiers; provides streaming, idempotent SQLite→PostgreSQL import, isolated crawler worker, Persian FastAPI dashboard, and Ubuntu 26.04 systemd deployment.
 
-## Deployment
+**Full instructions:** [README_FA.md](README_FA.md)
 
-The existing Ubuntu 26.04 installation is in `/opt/telewebion-crawler`, served by Nginx at `/twcrawler/`.
-
-### UI Stage 03
-
-Stage 03 adds a Persian RTL dashboard with separate episode and clip counters, per-network metrics, live polling, searchable extraction jobs, a right sidebar, and form-based login. Deploy the `TelewebionCrawler-Stage03-UI.zip` release bundle into the existing app with `bash deploy/install_stage03.sh` (back up first; verify HTTPS is enabled). See `README_STAGE03_FA.md` in the release bundle.
-
-The project is metadata-oriented. Do not commit production SQLite databases, credentials, downloaded media, or secrets.
+**Data handling:** No SQLite file, video, credentials, or scraped `raw_json` is tracked in Git. Imports remain private on the server. Crawler does not download videos or bypass access controls.
