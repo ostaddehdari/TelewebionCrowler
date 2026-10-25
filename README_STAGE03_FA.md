@@ -45,8 +45,8 @@ bash deploy/install_stage03.sh
 ```bash
 systemctl status twcrawler-web --no-pager
 nginx -t
-curl -k -I https://5.61.28.187/twcrawler/login
-curl -k -I https://5.61.28.187/twcrawler/dashboard
+curl -k -sS -o /dev/null -w "login HTTP=%{http_code}\n" https://5.61.28.187/twcrawler/login
+curl -k -sS -o /dev/null -w "dashboard HTTP=%{http_code}\n" https://5.61.28.187/twcrawler/dashboard
 journalctl -u twcrawler-web -n 70 --no-pager
 ```
 
