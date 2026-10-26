@@ -1,0 +1,536 @@
+[
+  {
+    "descriptor": "tv1",
+    "id": "0x1b1a6d1",
+    "name": "شبکه 1",
+    "type": "سراسری"
+  },
+  {
+    "descriptor": "tv2",
+    "id": "0x1b1a719",
+    "name": "شبکه 2",
+    "type": "سراسری"
+  },
+  {
+    "descriptor": "tv3",
+    "id": "0x1b1a761",
+    "name": "شبکه 3",
+    "type": "سراسری"
+  },
+  {
+    "descriptor": "tv4",
+    "id": "0x1b1a6e1",
+    "name": "شبکه 4",
+    "type": "سراسری"
+  },
+  {
+    "descriptor": "nasim",
+    "id": "0x1b1a77d",
+    "name": "نسیم",
+    "type": "سراسری"
+  },
+  {
+    "descriptor": "irinn",
+    "id": "0x1b1a6e0",
+    "name": "خبر",
+    "type": "سراسری"
+  },
+  {
+    "descriptor": "varzesh",
+    "id": "0x1b1a745",
+    "name": "ورزش",
+    "type": "سراسری"
+  },
+  {
+    "descriptor": "hdtest",
+    "id": "0x1b1a73d",
+    "name": "تماشا",
+    "type": "سراسری"
+  },
+  {
+    "descriptor": "pooya",
+    "id": "0x1b1a759",
+    "name": "پویا",
+    "type": "سراسری"
+  },
+  {
+    "descriptor": "ifilm",
+    "id": "0x1b1a71d",
+    "name": "IFilm",
+    "type": "سراسری"
+  },
+  {
+    "descriptor": "namayesh",
+    "id": "0x1b1a790",
+    "name": "نمایش",
+    "type": "سراسری"
+  },
+  {
+    "descriptor": "tehran",
+    "id": "0x1b1a6ed",
+    "name": "شبکه تهران",
+    "type": "سراسری"
+  },
+  {
+    "descriptor": "mostanad",
+    "id": "0x1b1a728",
+    "name": "مستند",
+    "type": "سراسری"
+  },
+  {
+    "descriptor": "quran",
+    "id": "0x1b1a784",
+    "name": "قرآن",
+    "type": "سراسری"
+  },
+  {
+    "descriptor": "amouzesh",
+    "id": "0x1b1a739",
+    "name": "آموزش",
+    "type": "سراسری"
+  },
+  {
+    "descriptor": "salamat",
+    "id": "0x1b1a721",
+    "name": "سلامت",
+    "type": "سراسری"
+  },
+  {
+    "descriptor": "ofogh",
+    "id": "0x1b1a723",
+    "name": "افق",
+    "type": "سراسری"
+  },
+  {
+    "descriptor": "omid",
+    "id": "0x1b1a763",
+    "name": "امید",
+    "type": "سراسری"
+  },
+  {
+    "descriptor": "faratar",
+    "id": "0x53f352e",
+    "name": "فراتر",
+    "type": "سراسری"
+  },
+  {
+    "descriptor": "irinn2",
+    "id": "0x2988d5f",
+    "name": "خبر 2",
+    "type": "سراسری"
+  },
+  {
+    "descriptor": "azarbayjangharbi",
+    "id": "0x1b1a715",
+    "name": "آذربایجان غربی",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "sahand",
+    "id": "0x1b1a6d9",
+    "name": "سهند",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "alborz",
+    "id": "0x1b1a73e",
+    "name": "البرز",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "esfahan",
+    "id": "0x1b1a732",
+    "name": "اصفهان",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "sabalan",
+    "id": "0x1b1a726",
+    "name": "سبلان",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "ilam",
+    "id": "0x1b1a746",
+    "name": "ایلام",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "bushehr",
+    "id": "0x1b1a747",
+    "name": "بوشهر",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "jahanbin",
+    "id": "0x1b1a700",
+    "name": "جهانبین",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "abadan",
+    "id": "0x1b1a740",
+    "name": "آبادان",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "khorasanrazavi",
+    "id": "0x1b1a74d",
+    "name": "خراسان رضوی",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "atrak",
+    "id": "0x1b1a6f0",
+    "name": "اترک",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "khalijefars",
+    "id": "0x1b1a722",
+    "name": "خلیج فارس",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "khoozestan",
+    "id": "0x1b1a6cc",
+    "name": "خوزستان",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "eshragh",
+    "id": "0x1b1a704",
+    "name": "اشراق",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "semnan",
+    "id": "0x1b1a6ea",
+    "name": "سمنان",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "hamoon",
+    "id": "0x1b1a73f",
+    "name": "هامون",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "fars",
+    "id": "0x1b1a77e",
+    "name": "فارس",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "qazvin",
+    "id": "0x1b1a724",
+    "name": "قزوین",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "noor",
+    "id": "0x1b1a75c",
+    "name": "نور",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "aflak",
+    "id": "0x1b1a6e5",
+    "name": "لرستان",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "kerman",
+    "id": "0x1b1a6db",
+    "name": "کرمان",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "zagros",
+    "id": "0x1b1a75b",
+    "name": "زاگرس",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "dena",
+    "id": "0x1b1a785",
+    "name": "دنا",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "kish",
+    "id": "0x1b1a748",
+    "name": "کیش",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "sabz",
+    "id": "0x1b1a733",
+    "name": "گلستان",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "baran",
+    "id": "0x1b1a754",
+    "name": "باران",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "kordestan",
+    "id": "0x1b1a6c4",
+    "name": "کردستان",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "taban",
+    "id": "0x1b1a716",
+    "name": "یزد",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "tabarestan",
+    "id": "0x1b1a710",
+    "name": "تبرستان",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "aftab",
+    "id": "0x1b1a752",
+    "name": "آفتاب",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "mahabad",
+    "id": "0x1b1a734",
+    "name": "مهاباد",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "sina",
+    "id": "0x1b1a780",
+    "name": "همدان",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "khavaran",
+    "id": "0x1b1a6dd",
+    "name": "خاوران",
+    "type": "استانی"
+  },
+  {
+    "descriptor": "tv1plus",
+    "id": "0x1504d515",
+    "name": "مثبت یک",
+    "type": "اختصاصی"
+  },
+  {
+    "descriptor": "habib",
+    "id": "0x1b1a77a",
+    "name": "حبیب",
+    "type": "اختصاصی"
+  },
+  {
+    "descriptor": "golkhane",
+    "id": "0x11396481",
+    "name": "گلخانه",
+    "type": "اختصاصی"
+  },
+  {
+    "descriptor": "labbayk",
+    "id": "0x1b1a742",
+    "name": "لبیک",
+    "type": "اختصاصی"
+  },
+  {
+    "descriptor": "iribu",
+    "id": "0x29c99cc",
+    "name": "رویا",
+    "type": "اختصاصی"
+  },
+  {
+    "descriptor": "razavi",
+    "id": "0x298c208",
+    "name": "رضوی",
+    "type": "اختصاصی"
+  },
+  {
+    "descriptor": "velayat",
+    "id": "0x2930cef",
+    "name": "ولایت",
+    "type": "اختصاصی"
+  },
+  {
+    "descriptor": "karoon",
+    "id": "0x12fdf301",
+    "name": "کارون",
+    "type": "اختصاصی"
+  },
+  {
+    "descriptor": "sport1",
+    "id": "0x13dfbdc3",
+    "name": "تلوبیون اسپرت 1",
+    "type": "اختصاصی"
+  },
+  {
+    "descriptor": "sport2",
+    "id": "0x13dfbdc6",
+    "name": "تلوبیون اسپرت 2",
+    "type": "اختصاصی"
+  },
+  {
+    "descriptor": "sport3",
+    "id": "0x13dfbdc7",
+    "name": "تلوبیون اسپرت 3",
+    "type": "اختصاصی"
+  },
+  {
+    "descriptor": "basij",
+    "id": "0x9770630",
+    "name": "بسیج",
+    "type": "اختصاصی"
+  },
+  {
+    "descriptor": "nesfejahan",
+    "id": "0x14e7414e",
+    "name": "نصف جهان",
+    "type": "اختصاصی"
+  },
+  {
+    "descriptor": "kawthar",
+    "id": "0x1b1a78d",
+    "name": "الکوثر",
+    "type": "برون مرزی"
+  },
+  {
+    "descriptor": "presstv",
+    "id": "0x16be0f78",
+    "name": "پرس تی‌وی",
+    "type": "برون مرزی"
+  },
+  {
+    "descriptor": "alalam",
+    "id": "0x16be0f79",
+    "name": "العالم",
+    "type": "برون مرزی"
+  },
+  {
+    "descriptor": "radioava",
+    "id": "0x1b1a789",
+    "name": "رادیو آوا",
+    "type": "رادیو نما"
+  },
+  {
+    "descriptor": "radiogoftogo",
+    "id": "0x1b1a6c7",
+    "name": "رادیو گفتگو",
+    "type": "رادیو نما"
+  },
+  {
+    "descriptor": "radiomaaref",
+    "id": "0x1b1a78a",
+    "name": "رادیو معارف",
+    "type": "رادیو نما"
+  },
+  {
+    "descriptor": "radioquran",
+    "id": "0x1b1a78b",
+    "name": "رادیو قرآن ",
+    "type": "رادیو نما"
+  },
+  {
+    "descriptor": "radiovarzesh",
+    "id": "0x1b1a760",
+    "name": "رادیو ورزش",
+    "type": "رادیو نما"
+  },
+  {
+    "descriptor": "radioeghtesad",
+    "id": "0x1b1a768",
+    "name": "رادیو اقتصاد",
+    "type": "رادیو نما"
+  },
+  {
+    "descriptor": "radioiran",
+    "id": "0x1b1a6e7",
+    "name": "رادیو ایران",
+    "type": "رادیو نما"
+  },
+  {
+    "descriptor": "radionamayesh",
+    "id": "0x1b1a718",
+    "name": "رادیو نمایش",
+    "type": "رادیو نما"
+  },
+  {
+    "descriptor": "radiosaba",
+    "id": "0x1b1a72f",
+    "name": "رادیو صبا",
+    "type": "رادیو نما"
+  },
+  {
+    "descriptor": "radiotehran",
+    "id": "0x1b1a6d8",
+    "name": "رادیو تهران",
+    "type": "رادیو نما"
+  },
+  {
+    "descriptor": "radioziarat",
+    "id": "0x1b1a6e8",
+    "name": "رادیو زیارت",
+    "type": "رادیو نما"
+  },
+  {
+    "descriptor": "radiofarhang",
+    "id": "0x1b1a6d2",
+    "name": "رادیو فرهنگ",
+    "type": "رادیو نما"
+  },
+  {
+    "descriptor": "radiojavan",
+    "id": "0x1b1a6d3",
+    "name": "رادیو جوان",
+    "type": "رادیو نما"
+  },
+  {
+    "descriptor": "radiopayam",
+    "id": "0x1b1a71b",
+    "name": "رادیو پیام",
+    "type": "رادیو نما"
+  },
+  {
+    "descriptor": "radiosalamat",
+    "id": "0x1b1a776",
+    "name": "رادیو سلامت",
+    "type": "رادیو نما"
+  },
+  {
+    "descriptor": "radiotartil",
+    "id": "0x1b1a6f6",
+    "name": "رادیو ترتیل",
+    "type": "رادیو نما"
+  },
+  {
+    "descriptor": "zaferan",
+    "id": "0x15e81661",
+    "name": "زعفران",
+    "type": "اختصاصی"
+  },
+  {
+    "descriptor": "negarestan",
+    "id": "0x166135c4",
+    "name": "نگارستان",
+    "type": "اختصاصی"
+  },
+  {
+    "descriptor": "makran",
+    "id": "0x16b743e6",
+    "name": "مکران",
+    "type": "اختصاصی"
+  },
+  {
+    "descriptor": "caspian",
+    "id": "0x16cc0710",
+    "name": "کاسپین",
+    "type": "اختصاصی"
+  }
+]

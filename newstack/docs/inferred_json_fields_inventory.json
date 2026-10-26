@@ -1,0 +1,7483 @@
+{
+  "notice": "Inferred from 15 public JSON response samples. No sample values, session tokens or private database schema.",
+  "paths": {
+    "$": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "body",
+        "message"
+      ],
+      "samples": 15
+    },
+    "$.body": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "content",
+        "content_metas",
+        "getEpisodesByTagId",
+        "getKandooSpaceByName",
+        "getPageByName",
+        "getProgram",
+        "getTag",
+        "queryChannel",
+        "queryProgram",
+        "queryRelatedTagsByTagID"
+      ],
+      "samples": 15
+    },
+    "$.body.content": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "actors",
+        "age_limit",
+        "alias",
+        "cameraman",
+        "casts",
+        "channel_owner_relation",
+        "collections",
+        "composer",
+        "content_id",
+        "content_show",
+        "content_status",
+        "content_token",
+        "content_type",
+        "countries",
+        "director",
+        "dubbed_type",
+        "dubber",
+        "editor",
+        "english_title",
+        "fa_dubbed",
+        "first_episode",
+        "format",
+        "genres",
+        "gregorian_release",
+        "has_subtitle",
+        "have_ads",
+        "host",
+        "imdb_rank",
+        "imdb_tt",
+        "is_foreign",
+        "jalali_release",
+        "languages",
+        "last_episode",
+        "last_episode_of_serials",
+        "media",
+        "meta",
+        "meta_tags",
+        "narrator",
+        "nid",
+        "owners",
+        "persian_title",
+        "producer",
+        "qualities",
+        "search_descriptors",
+        "seasons",
+        "serial_parts",
+        "sorted_seasons",
+        "special_title",
+        "story",
+        "titraje",
+        "view_count",
+        "writer"
+      ],
+      "samples": 4
+    },
+    "$.body.content[].actors": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].actors[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "cast_id",
+        "nid",
+        "order",
+        "person",
+        "role"
+      ],
+      "samples": 1
+    },
+    "$.body.content[].actors[].cast_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].actors[].nid": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].actors[].order": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].actors[].person": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "biography",
+        "birth_date",
+        "content_meta_id",
+        "image",
+        "is_superstar",
+        "title"
+      ],
+      "samples": 1
+    },
+    "$.body.content[].actors[].person.biography": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].actors[].person.birth_date": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].actors[].person.content_meta_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].actors[].person.image": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].actors[].person.is_superstar": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].actors[].person.title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].actors[].role": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "role_id",
+        "title"
+      ],
+      "samples": 1
+    },
+    "$.body.content[].actors[].role.role_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].actors[].role.title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].age_limit": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].alias": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].cameraman": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].cameraman[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "cast_id",
+        "nid",
+        "order",
+        "person",
+        "role"
+      ],
+      "samples": 1
+    },
+    "$.body.content[].cameraman[].cast_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].cameraman[].nid": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].cameraman[].order": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].cameraman[].person": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "biography",
+        "birth_date",
+        "content_meta_id",
+        "image",
+        "is_superstar",
+        "title"
+      ],
+      "samples": 1
+    },
+    "$.body.content[].cameraman[].person.biography": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].cameraman[].person.birth_date": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].cameraman[].person.content_meta_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].cameraman[].person.image": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].cameraman[].person.is_superstar": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].cameraman[].person.title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].cameraman[].role": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "role_id",
+        "title"
+      ],
+      "samples": 1
+    },
+    "$.body.content[].cameraman[].role.role_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].cameraman[].role.title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].casts": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 3
+    },
+    "$.body.content[].casts[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "cast_id",
+        "nid",
+        "order",
+        "person",
+        "role"
+      ],
+      "samples": 39
+    },
+    "$.body.content[].casts[].cast_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 39
+    },
+    "$.body.content[].casts[].nid": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 39
+    },
+    "$.body.content[].casts[].order": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 39
+    },
+    "$.body.content[].casts[].person": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "biography",
+        "birth_date",
+        "content_meta_id",
+        "image",
+        "is_superstar",
+        "title"
+      ],
+      "samples": 39
+    },
+    "$.body.content[].casts[].person.biography": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 39
+    },
+    "$.body.content[].casts[].person.birth_date": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 39
+    },
+    "$.body.content[].casts[].person.content_meta_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 39
+    },
+    "$.body.content[].casts[].person.image": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 39
+    },
+    "$.body.content[].casts[].person.is_superstar": {
+      "types": [
+        "NoneType",
+        "bool"
+      ],
+      "fields": [],
+      "samples": 39
+    },
+    "$.body.content[].casts[].person.title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 39
+    },
+    "$.body.content[].casts[].role": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "role_id",
+        "title"
+      ],
+      "samples": 39
+    },
+    "$.body.content[].casts[].role.role_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 39
+    },
+    "$.body.content[].casts[].role.title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 39
+    },
+    "$.body.content[].channel_owner_relation": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content[].collections": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].collections[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "content_meta_id",
+        "contents",
+        "title"
+      ],
+      "samples": 4
+    },
+    "$.body.content[].collections[].content_meta_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].collections[].contents": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].collections[].contents[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "alias",
+        "content_id",
+        "content_status",
+        "content_type",
+        "english_title",
+        "media",
+        "nid",
+        "persian_title",
+        "view_count"
+      ],
+      "samples": 22
+    },
+    "$.body.content[].collections[].contents[].alias": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 22
+    },
+    "$.body.content[].collections[].contents[].content_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 22
+    },
+    "$.body.content[].collections[].contents[].content_status": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 22
+    },
+    "$.body.content[].collections[].contents[].content_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 22
+    },
+    "$.body.content[].collections[].contents[].english_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 22
+    },
+    "$.body.content[].collections[].contents[].media": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "horizontal_big_poster",
+        "horizontal_small_poster",
+        "main_big_poster",
+        "main_small_poster",
+        "mobile_poster",
+        "special_poster",
+        "vertical_poster"
+      ],
+      "samples": 22
+    },
+    "$.body.content[].collections[].contents[].media.horizontal_big_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 22
+    },
+    "$.body.content[].collections[].contents[].media.horizontal_small_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 22
+    },
+    "$.body.content[].collections[].contents[].media.main_big_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 22
+    },
+    "$.body.content[].collections[].contents[].media.main_small_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 22
+    },
+    "$.body.content[].collections[].contents[].media.mobile_poster": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 22
+    },
+    "$.body.content[].collections[].contents[].media.special_poster": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 22
+    },
+    "$.body.content[].collections[].contents[].media.vertical_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 22
+    },
+    "$.body.content[].collections[].contents[].nid": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 22
+    },
+    "$.body.content[].collections[].contents[].persian_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 22
+    },
+    "$.body.content[].collections[].contents[].view_count": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 22
+    },
+    "$.body.content[].collections[].title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].composer": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].content_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].content_show": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "ekran_owners",
+        "tax",
+        "ticket_price",
+        "ticket_price_after_tax",
+        "ticket_time"
+      ],
+      "samples": 4
+    },
+    "$.body.content[].content_show.ekran_owners": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].content_show.tax": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].content_show.ticket_price": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].content_show.ticket_price_after_tax": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].content_show.ticket_time": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].content_status": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].content_token": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content[].content_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].countries": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].countries[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "content_meta_id",
+        "title"
+      ],
+      "samples": 4
+    },
+    "$.body.content[].countries[].content_meta_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].countries[].title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].director": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].director[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "cast_id",
+        "nid",
+        "order",
+        "person",
+        "role"
+      ],
+      "samples": 2
+    },
+    "$.body.content[].director[].cast_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content[].director[].nid": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content[].director[].order": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content[].director[].person": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "biography",
+        "birth_date",
+        "content_meta_id",
+        "image",
+        "is_superstar",
+        "title"
+      ],
+      "samples": 2
+    },
+    "$.body.content[].director[].person.biography": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content[].director[].person.birth_date": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content[].director[].person.content_meta_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content[].director[].person.image": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content[].director[].person.is_superstar": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content[].director[].person.title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content[].director[].role": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "role_id",
+        "title"
+      ],
+      "samples": 2
+    },
+    "$.body.content[].director[].role.role_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content[].director[].role.title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content[].dubbed_type": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].dubber": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].editor": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].editor[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "cast_id",
+        "nid",
+        "order",
+        "person",
+        "role"
+      ],
+      "samples": 1
+    },
+    "$.body.content[].editor[].cast_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].editor[].nid": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].editor[].order": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].editor[].person": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "biography",
+        "birth_date",
+        "content_meta_id",
+        "image",
+        "is_superstar",
+        "title"
+      ],
+      "samples": 1
+    },
+    "$.body.content[].editor[].person.biography": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].editor[].person.birth_date": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].editor[].person.content_meta_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].editor[].person.image": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].editor[].person.is_superstar": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].editor[].person.title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].editor[].role": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "role_id",
+        "title"
+      ],
+      "samples": 1
+    },
+    "$.body.content[].editor[].role.role_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].editor[].role.title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].english_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].fa_dubbed": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "alias",
+        "content_id",
+        "content_status",
+        "content_token",
+        "content_type",
+        "duration",
+        "english_title",
+        "episode",
+        "has_subtitle",
+        "is_last_part_of_serial",
+        "media",
+        "next",
+        "nid",
+        "persian_title",
+        "search_descriptors",
+        "season",
+        "special_title",
+        "story",
+        "titraje",
+        "view_count"
+      ],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].alias": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].content_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].content_status": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].content_token": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].content_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].duration": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].english_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].episode": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].has_subtitle": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].is_last_part_of_serial": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].media": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "horizontal_big_poster",
+        "horizontal_small_poster",
+        "logo_type",
+        "main_big_poster",
+        "main_small_poster",
+        "mobile_poster",
+        "special_image_part",
+        "special_poster",
+        "vertical_poster"
+      ],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].media.horizontal_big_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].media.horizontal_small_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].media.logo_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].media.main_big_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].media.main_small_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].media.mobile_poster": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].media.special_image_part": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].media.special_poster": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].media.vertical_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].next": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "ContentID",
+        "content_type",
+        "duration",
+        "episode",
+        "media",
+        "persian_title",
+        "season",
+        "view_count"
+      ],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].next.ContentID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].next.content_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].next.duration": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].next.episode": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].next.media": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "horizontal_big_poster",
+        "horizontal_small_poster",
+        "logo_type",
+        "main_big_poster",
+        "main_small_poster",
+        "mobile_poster",
+        "special_image_part",
+        "special_poster",
+        "vertical_poster"
+      ],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].next.media.horizontal_big_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].next.media.horizontal_small_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].next.media.logo_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].next.media.main_big_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].next.media.main_small_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].next.media.mobile_poster": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].next.media.special_image_part": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].next.media.special_poster": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].next.media.vertical_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].next.persian_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].next.season": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].next.view_count": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].nid": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].persian_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].search_descriptors": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].season": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].special_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].story": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].titraje": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "first_titraje_end",
+        "first_titraje_start",
+        "last_titraje_start"
+      ],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].titraje.first_titraje_end": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].titraje.first_titraje_start": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].titraje.last_titraje_start": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].first_episode[].view_count": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].format": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].format[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "content_meta_id",
+        "title"
+      ],
+      "samples": 6
+    },
+    "$.body.content[].format[].content_meta_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 6
+    },
+    "$.body.content[].format[].title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 6
+    },
+    "$.body.content[].genres": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].genres[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "content_meta_id",
+        "title"
+      ],
+      "samples": 6
+    },
+    "$.body.content[].genres[].content_meta_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 6
+    },
+    "$.body.content[].genres[].title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 6
+    },
+    "$.body.content[].gregorian_release": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].has_subtitle": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].have_ads": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].host": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].imdb_rank": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].imdb_tt": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].is_foreign": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].jalali_release": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].languages": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].languages[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "content_meta_id",
+        "title"
+      ],
+      "samples": 2
+    },
+    "$.body.content[].languages[].content_meta_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content[].languages[].title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content[].last_episode": {
+      "types": [
+        "array",
+        "bool"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].last_episode[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "alias",
+        "content_id",
+        "content_status",
+        "content_token",
+        "content_type",
+        "duration",
+        "english_title",
+        "episode",
+        "has_subtitle",
+        "is_last_part_of_serial",
+        "media",
+        "next",
+        "nid",
+        "persian_title",
+        "search_descriptors",
+        "season",
+        "special_title",
+        "story",
+        "titraje",
+        "view_count"
+      ],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].alias": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].content_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].content_status": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].content_token": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].content_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].duration": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].english_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].episode": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].has_subtitle": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].is_last_part_of_serial": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].media": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "horizontal_big_poster",
+        "horizontal_small_poster",
+        "logo_type",
+        "main_big_poster",
+        "main_small_poster",
+        "mobile_poster",
+        "special_image_part",
+        "special_poster",
+        "vertical_poster"
+      ],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].media.horizontal_big_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].media.horizontal_small_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].media.logo_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].media.main_big_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].media.main_small_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].media.mobile_poster": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].media.special_image_part": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].media.special_poster": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].media.vertical_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].next": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].nid": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].persian_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].search_descriptors": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].season": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].special_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].story": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].titraje": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "first_titraje_end",
+        "first_titraje_start",
+        "last_titraje_start"
+      ],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].titraje.first_titraje_end": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].titraje.first_titraje_start": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].titraje.last_titraje_start": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode[].view_count": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].last_episode_of_serials": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].media": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "horizontal_big_poster",
+        "horizontal_small_poster",
+        "logo_type",
+        "main_big_poster",
+        "main_small_poster",
+        "mobile_poster",
+        "special_image_part",
+        "special_poster",
+        "vertical_poster"
+      ],
+      "samples": 4
+    },
+    "$.body.content[].media.horizontal_big_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].media.horizontal_small_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].media.logo_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].media.main_big_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].media.main_small_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].media.mobile_poster": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].media.special_image_part": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].media.special_poster": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].media.vertical_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].meta": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "no_index",
+        "page_description",
+        "page_title"
+      ],
+      "samples": 4
+    },
+    "$.body.content[].meta.no_index": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].meta.page_description": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].meta.page_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].meta_tags": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].narrator": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].nid": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].owners": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].persian_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].producer": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].producer[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "cast_id",
+        "nid",
+        "order",
+        "person",
+        "role"
+      ],
+      "samples": 1
+    },
+    "$.body.content[].producer[].cast_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].producer[].nid": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].producer[].order": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].producer[].person": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "biography",
+        "birth_date",
+        "content_meta_id",
+        "image",
+        "is_superstar",
+        "title"
+      ],
+      "samples": 1
+    },
+    "$.body.content[].producer[].person.biography": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].producer[].person.birth_date": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].producer[].person.content_meta_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].producer[].person.image": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].producer[].person.is_superstar": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].producer[].person.title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].producer[].role": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "role_id",
+        "title"
+      ],
+      "samples": 1
+    },
+    "$.body.content[].producer[].role.role_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].producer[].role.title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].qualities": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].qualities[]": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].search_descriptors": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].seasons": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].seasons[]": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 8
+    },
+    "$.body.content[].serial_parts": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 3
+    },
+    "$.body.content[].serial_parts[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "alias",
+        "content_id",
+        "content_status",
+        "content_token",
+        "content_type",
+        "duration",
+        "english_title",
+        "episode",
+        "has_subtitle",
+        "is_last_part_of_serial",
+        "media",
+        "nid",
+        "persian_title",
+        "search_descriptors",
+        "season",
+        "special_title",
+        "story",
+        "view_count"
+      ],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].alias": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].content_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].content_status": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].content_token": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 6
+    },
+    "$.body.content[].serial_parts[].content_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].duration": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].english_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].episode": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].has_subtitle": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].is_last_part_of_serial": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].media": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "horizontal_big_poster",
+        "horizontal_small_poster",
+        "logo_type",
+        "main_big_poster",
+        "main_small_poster",
+        "mobile_poster",
+        "special_image_part",
+        "special_poster",
+        "vertical_poster"
+      ],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].media.horizontal_big_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].media.horizontal_small_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].media.logo_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].media.main_big_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].media.main_small_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].media.mobile_poster": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].media.special_image_part": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].media.special_poster": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].media.vertical_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].nid": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].persian_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].search_descriptors": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].season": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].special_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].story": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 26
+    },
+    "$.body.content[].serial_parts[].view_count": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 26
+    },
+    "$.body.content[].sorted_seasons": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].sorted_seasons[]": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].special_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].story": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].titraje": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "first_titraje_end",
+        "first_titraje_start",
+        "last_titraje_start"
+      ],
+      "samples": 1
+    },
+    "$.body.content[].titraje.first_titraje_end": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].titraje.first_titraje_start": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].titraje.last_titraje_start": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].view_count": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content[].writer": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content[].writer[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "cast_id",
+        "nid",
+        "order",
+        "person",
+        "role"
+      ],
+      "samples": 2
+    },
+    "$.body.content[].writer[].cast_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content[].writer[].nid": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content[].writer[].order": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content[].writer[].person": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "biography",
+        "birth_date",
+        "content_meta_id",
+        "image",
+        "is_superstar",
+        "title"
+      ],
+      "samples": 2
+    },
+    "$.body.content[].writer[].person.biography": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content[].writer[].person.birth_date": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content[].writer[].person.content_meta_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content[].writer[].person.image": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content[].writer[].person.is_superstar": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content[].writer[].person.title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content[].writer[].role": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "role_id",
+        "title"
+      ],
+      "samples": 2
+    },
+    "$.body.content[].writer[].role.role_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content[].writer[].role.title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.content_metas": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content_metas[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "content_meta_id",
+        "contents",
+        "created_at",
+        "enable",
+        "title",
+        "updated_at"
+      ],
+      "samples": 1
+    },
+    "$.body.content_metas[].content_meta_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content_metas[].contents": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content_metas[].contents[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "age_limit",
+        "alias",
+        "content_id",
+        "content_show",
+        "content_status",
+        "content_type",
+        "countries",
+        "description",
+        "dubbed_type",
+        "duration",
+        "english_title",
+        "genres",
+        "gregorian_release",
+        "imdb_rank",
+        "imdb_tt",
+        "jalali_release",
+        "media",
+        "nid",
+        "persian_title",
+        "serial_parts",
+        "story",
+        "view_count"
+      ],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].age_limit": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].alias": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].content_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].content_show": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "ContentShowID",
+        "ekran_owners",
+        "ticket_price",
+        "ticket_time"
+      ],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].content_show.ContentShowID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].content_show.ekran_owners": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].content_show.ticket_price": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].content_show.ticket_time": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].content_status": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].content_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].countries": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].countries[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "ContentMetaID",
+        "title"
+      ],
+      "samples": 17
+    },
+    "$.body.content_metas[].contents[].countries[].ContentMetaID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 17
+    },
+    "$.body.content_metas[].contents[].countries[].title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 17
+    },
+    "$.body.content_metas[].contents[].description": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].dubbed_type": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].duration": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 14
+    },
+    "$.body.content_metas[].contents[].english_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].genres": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].genres[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "ContentMetaID",
+        "title"
+      ],
+      "samples": 35
+    },
+    "$.body.content_metas[].contents[].genres[].ContentMetaID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 35
+    },
+    "$.body.content_metas[].contents[].genres[].title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 35
+    },
+    "$.body.content_metas[].contents[].gregorian_release": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].imdb_rank": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].imdb_tt": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].jalali_release": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].media": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "MediaID",
+        "horizontal_big_poster",
+        "horizontal_small_poster",
+        "logo_type",
+        "main_big_poster",
+        "main_small_poster",
+        "mobile_poster",
+        "special_image_part",
+        "special_poster",
+        "vertical_poster"
+      ],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].media.MediaID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].media.horizontal_big_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].media.horizontal_small_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].media.logo_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].media.main_big_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].media.main_small_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].media.mobile_poster": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].media.special_image_part": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].media.special_poster": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].media.vertical_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].nid": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].persian_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].serial_parts": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content_metas[].contents[].serial_parts[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "alias",
+        "content_id",
+        "content_type",
+        "english_title",
+        "media",
+        "nid",
+        "persian_title",
+        "view_count"
+      ],
+      "samples": 4
+    },
+    "$.body.content_metas[].contents[].serial_parts[].alias": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content_metas[].contents[].serial_parts[].content_id": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content_metas[].contents[].serial_parts[].content_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content_metas[].contents[].serial_parts[].english_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content_metas[].contents[].serial_parts[].media": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "horizontal_small_poster",
+        "vertical_poster"
+      ],
+      "samples": 4
+    },
+    "$.body.content_metas[].contents[].serial_parts[].media.horizontal_small_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content_metas[].contents[].serial_parts[].media.vertical_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content_metas[].contents[].serial_parts[].nid": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content_metas[].contents[].serial_parts[].persian_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content_metas[].contents[].serial_parts[].view_count": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.content_metas[].contents[].story": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].contents[].view_count": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.content_metas[].created_at": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content_metas[].enable": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content_metas[].title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.content_metas[].updated_at": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getEpisodesByTagId": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "episodes",
+        "tag"
+      ],
+      "samples": 1
+    },
+    "$.body.getEpisodesByTagId.episodes": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getEpisodesByTagId.episodes[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "EpisodeID",
+        "channel",
+        "cover",
+        "created_at",
+        "description",
+        "duration",
+        "ended_at",
+        "exclude_periods",
+        "file_path",
+        "file_size",
+        "id",
+        "image",
+        "is_clip",
+        "is_hot",
+        "page_description",
+        "program",
+        "show_time",
+        "started_at",
+        "tags",
+        "thumbnail_time",
+        "title",
+        "view_count"
+      ],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].EpisodeID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].channel": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].cover": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].created_at": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].description": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].duration": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].ended_at": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].exclude_periods": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].exclude_periods[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "end_at",
+        "start_at"
+      ],
+      "samples": 7
+    },
+    "$.body.getEpisodesByTagId.episodes[].exclude_periods[].end_at": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 7
+    },
+    "$.body.getEpisodesByTagId.episodes[].exclude_periods[].start_at": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 7
+    },
+    "$.body.getEpisodesByTagId.episodes[].file_path": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].file_size": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].id": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].image": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].is_clip": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].is_hot": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].page_description": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].program": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "ProgramID",
+        "background",
+        "cover",
+        "id",
+        "image",
+        "is_singleton",
+        "title",
+        "web_background_url",
+        "web_image_url"
+      ],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].program.ProgramID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].program.background": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].program.cover": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].program.id": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].program.image": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].program.is_singleton": {
+      "types": [
+        "NoneType",
+        "bool"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].program.title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].program.web_background_url": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].program.web_image_url": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].show_time": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].started_at": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].tags": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].tags[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "TagID",
+        "name",
+        "type"
+      ],
+      "samples": 149
+    },
+    "$.body.getEpisodesByTagId.episodes[].tags[].TagID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 149
+    },
+    "$.body.getEpisodesByTagId.episodes[].tags[].name": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 149
+    },
+    "$.body.getEpisodesByTagId.episodes[].tags[].type": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 149
+    },
+    "$.body.getEpisodesByTagId.episodes[].thumbnail_time": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.episodes[].view_count": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getEpisodesByTagId.tag": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "TagID",
+        "UI",
+        "meta",
+        "name",
+        "type"
+      ],
+      "samples": 1
+    },
+    "$.body.getEpisodesByTagId.tag.TagID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getEpisodesByTagId.tag.UI": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getEpisodesByTagId.tag.meta": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getEpisodesByTagId.tag.name": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getEpisodesByTagId.tag.type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getKandooSpaceByName": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "SpaceID",
+        "is_enable",
+        "logic_id",
+        "logic_section_title",
+        "name",
+        "name_fa",
+        "pages",
+        "rows",
+        "space_menus",
+        "space_type"
+      ],
+      "samples": 2
+    },
+    "$.body.getKandooSpaceByName.SpaceID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getKandooSpaceByName.is_enable": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getKandooSpaceByName.logic_id": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getKandooSpaceByName.logic_section_title": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getKandooSpaceByName.name": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getKandooSpaceByName.name_fa": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getKandooSpaceByName.pages": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getKandooSpaceByName.pages[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "PageID",
+        "is_enable",
+        "is_home",
+        "name",
+        "name_fa",
+        "order"
+      ],
+      "samples": 7
+    },
+    "$.body.getKandooSpaceByName.pages[].PageID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 7
+    },
+    "$.body.getKandooSpaceByName.pages[].is_enable": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 7
+    },
+    "$.body.getKandooSpaceByName.pages[].is_home": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 7
+    },
+    "$.body.getKandooSpaceByName.pages[].name": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 7
+    },
+    "$.body.getKandooSpaceByName.pages[].name_fa": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 7
+    },
+    "$.body.getKandooSpaceByName.pages[].order": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 7
+    },
+    "$.body.getKandooSpaceByName.rows": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getKandooSpaceByName.rows[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "RowID",
+        "component",
+        "order"
+      ],
+      "samples": 20
+    },
+    "$.body.getKandooSpaceByName.rows[].RowID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 20
+    },
+    "$.body.getKandooSpaceByName.rows[].component": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "ComponentID",
+        "__typename",
+        "background_promotion",
+        "banner_type",
+        "banners",
+        "component_type",
+        "contents",
+        "copyright",
+        "created_at",
+        "default_playlist",
+        "desktop_column_numbers",
+        "desktop_division_mode",
+        "has_pagination",
+        "is_collection",
+        "is_enable",
+        "is_kids",
+        "is_title_inside_card",
+        "label",
+        "location",
+        "mobile_column_numbers",
+        "mobile_division_mode",
+        "placement",
+        "playlists",
+        "show_all_uri",
+        "size",
+        "sliders",
+        "title",
+        "updated_at",
+        "uri",
+        "vod_type"
+      ],
+      "samples": 20
+    },
+    "$.body.getKandooSpaceByName.rows[].component.ComponentID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 20
+    },
+    "$.body.getKandooSpaceByName.rows[].component.__typename": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 20
+    },
+    "$.body.getKandooSpaceByName.rows[].component.background_promotion": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getKandooSpaceByName.rows[].component.banner_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getKandooSpaceByName.rows[].component.banners": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getKandooSpaceByName.rows[].component.banners[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "BannerID",
+        "event_type",
+        "expire_date",
+        "image_url",
+        "is_exclusive",
+        "is_live",
+        "is_new",
+        "link",
+        "order",
+        "play_time",
+        "start_date",
+        "subtitle",
+        "title"
+      ],
+      "samples": 30
+    },
+    "$.body.getKandooSpaceByName.rows[].component.banners[].BannerID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.getKandooSpaceByName.rows[].component.banners[].event_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.getKandooSpaceByName.rows[].component.banners[].expire_date": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.getKandooSpaceByName.rows[].component.banners[].image_url": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.getKandooSpaceByName.rows[].component.banners[].is_exclusive": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.getKandooSpaceByName.rows[].component.banners[].is_live": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.getKandooSpaceByName.rows[].component.banners[].is_new": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.getKandooSpaceByName.rows[].component.banners[].link": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.getKandooSpaceByName.rows[].component.banners[].order": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.getKandooSpaceByName.rows[].component.banners[].play_time": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.getKandooSpaceByName.rows[].component.banners[].start_date": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.getKandooSpaceByName.rows[].component.banners[].subtitle": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.getKandooSpaceByName.rows[].component.banners[].title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.getKandooSpaceByName.rows[].component.component_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 13
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "ContentID",
+        "age_limit",
+        "alias",
+        "content_show",
+        "content_status",
+        "content_type",
+        "copyright",
+        "countries",
+        "created_at",
+        "dubbed_type",
+        "duration",
+        "enable",
+        "english_title",
+        "gregorian_release",
+        "has_download",
+        "has_subtitle",
+        "have_ads",
+        "imdb_rank",
+        "imdb_tt",
+        "in_myket",
+        "in_telewebion",
+        "is_foreign",
+        "jalali_release",
+        "media",
+        "nid",
+        "persian_title",
+        "search_descriptors",
+        "special_title",
+        "story",
+        "updated_at",
+        "view_count"
+      ],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].ContentID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].age_limit": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].alias": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].content_show": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "ContentShowID",
+        "ticket_price",
+        "ticket_time"
+      ],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].content_show.ContentShowID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].content_show.ticket_price": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].content_show.ticket_time": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].content_status": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].content_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].copyright": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].countries": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].countries[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "ContentMetaID",
+        "title"
+      ],
+      "samples": 238
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].countries[].ContentMetaID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 238
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].countries[].title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 238
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].created_at": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].dubbed_type": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].duration": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].enable": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].english_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].gregorian_release": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].has_download": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].has_subtitle": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].have_ads": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].imdb_rank": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].imdb_tt": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].in_myket": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].in_telewebion": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].is_foreign": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].jalali_release": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].media": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "horizontal_big_poster",
+        "horizontal_small_poster",
+        "logo_type",
+        "main_big_poster",
+        "main_small_poster",
+        "mobile_poster",
+        "special_image_part",
+        "special_poster",
+        "vertical_poster"
+      ],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].media.horizontal_big_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].media.horizontal_small_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].media.logo_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].media.main_big_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].media.main_small_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].media.mobile_poster": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].media.special_image_part": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].media.special_poster": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].media.vertical_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].nid": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].persian_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].search_descriptors": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].special_title": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].story": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].updated_at": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.contents[].view_count": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 195
+    },
+    "$.body.getKandooSpaceByName.rows[].component.copyright": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 18
+    },
+    "$.body.getKandooSpaceByName.rows[].component.created_at": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 20
+    },
+    "$.body.getKandooSpaceByName.rows[].component.default_playlist": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getKandooSpaceByName.rows[].component.desktop_column_numbers": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getKandooSpaceByName.rows[].component.desktop_division_mode": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getKandooSpaceByName.rows[].component.has_pagination": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 13
+    },
+    "$.body.getKandooSpaceByName.rows[].component.is_collection": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getKandooSpaceByName.rows[].component.is_enable": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 20
+    },
+    "$.body.getKandooSpaceByName.rows[].component.is_kids": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getKandooSpaceByName.rows[].component.is_title_inside_card": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getKandooSpaceByName.rows[].component.label": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 20
+    },
+    "$.body.getKandooSpaceByName.rows[].component.location": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getKandooSpaceByName.rows[].component.mobile_column_numbers": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getKandooSpaceByName.rows[].component.mobile_division_mode": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getKandooSpaceByName.rows[].component.placement": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getKandooSpaceByName.rows[].component.playlists": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getKandooSpaceByName.rows[].component.playlists[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "ChannelPlaylistID",
+        "logo_path",
+        "title"
+      ],
+      "samples": 1
+    },
+    "$.body.getKandooSpaceByName.rows[].component.playlists[].ChannelPlaylistID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getKandooSpaceByName.rows[].component.playlists[].logo_path": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getKandooSpaceByName.rows[].component.playlists[].title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getKandooSpaceByName.rows[].component.show_all_uri": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getKandooSpaceByName.rows[].component.size": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "SliderID",
+        "button_type",
+        "copyright",
+        "count_down_expire_date",
+        "custom_button",
+        "description",
+        "enable",
+        "expire_date",
+        "image_path_compact_vod",
+        "image_path_home",
+        "image_path_large_home",
+        "image_path_large_vod",
+        "image_path_responsive_home",
+        "image_path_responsive_vod",
+        "image_path_vod",
+        "informative_tag",
+        "is_count_down",
+        "is_mobile",
+        "is_web",
+        "link",
+        "logo_1",
+        "logo_2",
+        "main_logo",
+        "order",
+        "play_time",
+        "title"
+      ],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].SliderID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].button_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].copyright": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].count_down_expire_date": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].custom_button": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].description": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].enable": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].expire_date": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].image_path_compact_vod": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].image_path_home": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].image_path_large_home": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].image_path_large_vod": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].image_path_responsive_home": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].image_path_responsive_vod": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].image_path_vod": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].informative_tag": {
+      "types": [
+        "NoneType",
+        "object"
+      ],
+      "fields": [
+        "design_type",
+        "en_title",
+        "fa_title"
+      ],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].informative_tag.design_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 16
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].informative_tag.en_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 16
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].informative_tag.fa_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 16
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].is_count_down": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].is_mobile": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].is_web": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].link": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].logo_1": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].logo_2": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].main_logo": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].order": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].play_time": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.sliders[].title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 27
+    },
+    "$.body.getKandooSpaceByName.rows[].component.title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getKandooSpaceByName.rows[].component.updated_at": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getKandooSpaceByName.rows[].component.uri": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 13
+    },
+    "$.body.getKandooSpaceByName.rows[].component.vod_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 13
+    },
+    "$.body.getKandooSpaceByName.rows[].order": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 20
+    },
+    "$.body.getKandooSpaceByName.space_menus": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getKandooSpaceByName.space_menus[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "SpaceID",
+        "is_enable",
+        "name",
+        "name_fa",
+        "order",
+        "space_type"
+      ],
+      "samples": 6
+    },
+    "$.body.getKandooSpaceByName.space_menus[].SpaceID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 6
+    },
+    "$.body.getKandooSpaceByName.space_menus[].is_enable": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 6
+    },
+    "$.body.getKandooSpaceByName.space_menus[].name": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 6
+    },
+    "$.body.getKandooSpaceByName.space_menus[].name_fa": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 6
+    },
+    "$.body.getKandooSpaceByName.space_menus[].order": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 6
+    },
+    "$.body.getKandooSpaceByName.space_menus[].space_type": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 6
+    },
+    "$.body.getKandooSpaceByName.space_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getPageByName": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "PageID",
+        "candidate",
+        "is_enable",
+        "logic_id",
+        "logic_section_title",
+        "name",
+        "name_fa",
+        "order",
+        "owned_by_creator",
+        "rows",
+        "social_networks",
+        "space_menus",
+        "tag",
+        "tag_type"
+      ],
+      "samples": 2
+    },
+    "$.body.getPageByName.PageID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getPageByName.candidate": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getPageByName.is_enable": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getPageByName.logic_id": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getPageByName.logic_section_title": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getPageByName.name": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getPageByName.name_fa": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getPageByName.order": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getPageByName.owned_by_creator": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getPageByName.rows": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getPageByName.rows[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "RowID",
+        "component",
+        "order"
+      ],
+      "samples": 20
+    },
+    "$.body.getPageByName.rows[].RowID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 20
+    },
+    "$.body.getPageByName.rows[].component": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "ComponentID",
+        "__typename",
+        "background_promotion",
+        "banner_type",
+        "banners",
+        "component_type",
+        "contents",
+        "copyright",
+        "created_at",
+        "default_playlist",
+        "desktop_column_numbers",
+        "desktop_division_mode",
+        "episodes",
+        "has_pagination",
+        "is_clip",
+        "is_collection",
+        "is_enable",
+        "is_kids",
+        "is_related_to_live_event",
+        "is_title_inside_card",
+        "label",
+        "location",
+        "mobile_column_numbers",
+        "mobile_division_mode",
+        "placement",
+        "playlists",
+        "show_all_uri",
+        "size",
+        "sliders",
+        "tag",
+        "tag_name",
+        "title",
+        "updated_at",
+        "uri",
+        "vod_type"
+      ],
+      "samples": 20
+    },
+    "$.body.getPageByName.rows[].component.ComponentID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 20
+    },
+    "$.body.getPageByName.rows[].component.__typename": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 20
+    },
+    "$.body.getPageByName.rows[].component.background_promotion": {
+      "types": [
+        "NoneType",
+        "object"
+      ],
+      "fields": [
+        "BackgroundPromotionID",
+        "background_desktop_url",
+        "background_mobile_url",
+        "description",
+        "logo_url",
+        "promotion_type",
+        "tags",
+        "title"
+      ],
+      "samples": 10
+    },
+    "$.body.getPageByName.rows[].component.background_promotion.BackgroundPromotionID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getPageByName.rows[].component.background_promotion.background_desktop_url": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getPageByName.rows[].component.background_promotion.background_mobile_url": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getPageByName.rows[].component.background_promotion.description": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getPageByName.rows[].component.background_promotion.logo_url": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getPageByName.rows[].component.background_promotion.promotion_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getPageByName.rows[].component.background_promotion.tags": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getPageByName.rows[].component.background_promotion.title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getPageByName.rows[].component.banner_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getPageByName.rows[].component.banners": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getPageByName.rows[].component.banners[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "BannerID",
+        "event_type",
+        "expire_date",
+        "image_url",
+        "is_exclusive",
+        "is_live",
+        "is_new",
+        "link",
+        "order",
+        "play_time",
+        "start_date",
+        "subtitle",
+        "title"
+      ],
+      "samples": 11
+    },
+    "$.body.getPageByName.rows[].component.banners[].BannerID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 11
+    },
+    "$.body.getPageByName.rows[].component.banners[].event_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 11
+    },
+    "$.body.getPageByName.rows[].component.banners[].expire_date": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 11
+    },
+    "$.body.getPageByName.rows[].component.banners[].image_url": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 11
+    },
+    "$.body.getPageByName.rows[].component.banners[].is_exclusive": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 11
+    },
+    "$.body.getPageByName.rows[].component.banners[].is_live": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 11
+    },
+    "$.body.getPageByName.rows[].component.banners[].is_new": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 11
+    },
+    "$.body.getPageByName.rows[].component.banners[].link": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 11
+    },
+    "$.body.getPageByName.rows[].component.banners[].order": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 11
+    },
+    "$.body.getPageByName.rows[].component.banners[].play_time": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 11
+    },
+    "$.body.getPageByName.rows[].component.banners[].start_date": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 11
+    },
+    "$.body.getPageByName.rows[].component.banners[].subtitle": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 11
+    },
+    "$.body.getPageByName.rows[].component.banners[].title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 11
+    },
+    "$.body.getPageByName.rows[].component.component_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getPageByName.rows[].component.contents": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 6
+    },
+    "$.body.getPageByName.rows[].component.contents[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "ContentID",
+        "age_limit",
+        "alias",
+        "content_show",
+        "content_status",
+        "content_type",
+        "copyright",
+        "countries",
+        "created_at",
+        "description",
+        "dubbed_type",
+        "duration",
+        "enable",
+        "english_title",
+        "gregorian_release",
+        "has_download",
+        "has_subtitle",
+        "have_ads",
+        "imdb_rank",
+        "imdb_tt",
+        "in_myket",
+        "in_telewebion",
+        "is_foreign",
+        "jalali_release",
+        "media",
+        "nid",
+        "persian_title",
+        "search_descriptors",
+        "special_title",
+        "story",
+        "updated_at",
+        "view_count"
+      ],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].ContentID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].age_limit": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].alias": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].content_show": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "ContentShowID",
+        "ticket_price",
+        "ticket_time"
+      ],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].content_show.ContentShowID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].content_show.ticket_price": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].content_show.ticket_time": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].content_status": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].content_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].copyright": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].countries": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].countries[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "ContentMetaID",
+        "title"
+      ],
+      "samples": 99
+    },
+    "$.body.getPageByName.rows[].component.contents[].countries[].ContentMetaID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 99
+    },
+    "$.body.getPageByName.rows[].component.contents[].countries[].title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 99
+    },
+    "$.body.getPageByName.rows[].component.contents[].created_at": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].description": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].dubbed_type": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].duration": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].enable": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].english_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].gregorian_release": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].has_download": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].has_subtitle": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].have_ads": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].imdb_rank": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].imdb_tt": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].in_myket": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].in_telewebion": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].is_foreign": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].jalali_release": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].media": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "horizontal_big_poster",
+        "horizontal_small_poster",
+        "logo_type",
+        "main_big_poster",
+        "main_small_poster",
+        "mobile_poster",
+        "special_image_part",
+        "special_poster",
+        "vertical_poster"
+      ],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].media.horizontal_big_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].media.horizontal_small_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].media.logo_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].media.main_big_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].media.main_small_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].media.mobile_poster": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].media.special_image_part": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].media.special_poster": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].media.vertical_poster": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].nid": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].persian_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].search_descriptors": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].special_title": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].story": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].updated_at": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.contents[].view_count": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 86
+    },
+    "$.body.getPageByName.rows[].component.copyright": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 19
+    },
+    "$.body.getPageByName.rows[].component.created_at": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 20
+    },
+    "$.body.getPageByName.rows[].component.default_playlist": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getPageByName.rows[].component.desktop_column_numbers": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getPageByName.rows[].component.desktop_division_mode": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getPageByName.rows[].component.episodes": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 8
+    },
+    "$.body.getPageByName.rows[].component.episodes[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "EpisodeID",
+        "created_at",
+        "duration",
+        "image",
+        "image_large",
+        "image_small",
+        "is_clip",
+        "is_hot",
+        "program",
+        "started_at",
+        "title",
+        "view_count"
+      ],
+      "samples": 24
+    },
+    "$.body.getPageByName.rows[].component.episodes[].EpisodeID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 24
+    },
+    "$.body.getPageByName.rows[].component.episodes[].created_at": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 24
+    },
+    "$.body.getPageByName.rows[].component.episodes[].duration": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 24
+    },
+    "$.body.getPageByName.rows[].component.episodes[].image": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 24
+    },
+    "$.body.getPageByName.rows[].component.episodes[].image_large": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 24
+    },
+    "$.body.getPageByName.rows[].component.episodes[].image_small": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 24
+    },
+    "$.body.getPageByName.rows[].component.episodes[].is_clip": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 24
+    },
+    "$.body.getPageByName.rows[].component.episodes[].is_hot": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 24
+    },
+    "$.body.getPageByName.rows[].component.episodes[].program": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "ProgramID",
+        "background",
+        "cover",
+        "id",
+        "image",
+        "is_hot",
+        "is_singleton",
+        "title",
+        "view_count",
+        "web_background_url",
+        "web_image_url"
+      ],
+      "samples": 24
+    },
+    "$.body.getPageByName.rows[].component.episodes[].program.ProgramID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 24
+    },
+    "$.body.getPageByName.rows[].component.episodes[].program.background": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 24
+    },
+    "$.body.getPageByName.rows[].component.episodes[].program.cover": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 24
+    },
+    "$.body.getPageByName.rows[].component.episodes[].program.id": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 24
+    },
+    "$.body.getPageByName.rows[].component.episodes[].program.image": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 24
+    },
+    "$.body.getPageByName.rows[].component.episodes[].program.is_hot": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 24
+    },
+    "$.body.getPageByName.rows[].component.episodes[].program.is_singleton": {
+      "types": [
+        "NoneType",
+        "bool"
+      ],
+      "fields": [],
+      "samples": 24
+    },
+    "$.body.getPageByName.rows[].component.episodes[].program.title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 24
+    },
+    "$.body.getPageByName.rows[].component.episodes[].program.view_count": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 24
+    },
+    "$.body.getPageByName.rows[].component.episodes[].program.web_background_url": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 24
+    },
+    "$.body.getPageByName.rows[].component.episodes[].program.web_image_url": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 24
+    },
+    "$.body.getPageByName.rows[].component.episodes[].started_at": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 24
+    },
+    "$.body.getPageByName.rows[].component.episodes[].title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 24
+    },
+    "$.body.getPageByName.rows[].component.episodes[].view_count": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 24
+    },
+    "$.body.getPageByName.rows[].component.has_pagination": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 14
+    },
+    "$.body.getPageByName.rows[].component.is_clip": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 8
+    },
+    "$.body.getPageByName.rows[].component.is_collection": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getPageByName.rows[].component.is_enable": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 20
+    },
+    "$.body.getPageByName.rows[].component.is_kids": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getPageByName.rows[].component.is_related_to_live_event": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 8
+    },
+    "$.body.getPageByName.rows[].component.is_title_inside_card": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getPageByName.rows[].component.label": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 20
+    },
+    "$.body.getPageByName.rows[].component.location": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getPageByName.rows[].component.mobile_column_numbers": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getPageByName.rows[].component.mobile_division_mode": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getPageByName.rows[].component.placement": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getPageByName.rows[].component.playlists": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getPageByName.rows[].component.playlists[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "ChannelPlaylistID",
+        "logo_path",
+        "title"
+      ],
+      "samples": 1
+    },
+    "$.body.getPageByName.rows[].component.playlists[].ChannelPlaylistID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getPageByName.rows[].component.playlists[].logo_path": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getPageByName.rows[].component.playlists[].title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getPageByName.rows[].component.show_all_uri": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 16
+    },
+    "$.body.getPageByName.rows[].component.size": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 16
+    },
+    "$.body.getPageByName.rows[].component.sliders": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getPageByName.rows[].component.sliders[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "SliderID",
+        "button_type",
+        "copyright",
+        "count_down_expire_date",
+        "custom_button",
+        "description",
+        "enable",
+        "expire_date",
+        "image_path_compact_vod",
+        "image_path_home",
+        "image_path_large_home",
+        "image_path_large_vod",
+        "image_path_responsive_home",
+        "image_path_responsive_vod",
+        "image_path_vod",
+        "informative_tag",
+        "is_count_down",
+        "is_mobile",
+        "is_web",
+        "link",
+        "logo_1",
+        "logo_2",
+        "main_logo",
+        "order",
+        "play_time",
+        "title"
+      ],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].SliderID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].button_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].copyright": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].count_down_expire_date": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].custom_button": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].description": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].enable": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].expire_date": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].image_path_compact_vod": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].image_path_home": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].image_path_large_home": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].image_path_large_vod": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].image_path_responsive_home": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].image_path_responsive_vod": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].image_path_vod": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].informative_tag": {
+      "types": [
+        "NoneType",
+        "object"
+      ],
+      "fields": [
+        "design_type",
+        "en_title",
+        "fa_title"
+      ],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].informative_tag.design_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 8
+    },
+    "$.body.getPageByName.rows[].component.sliders[].informative_tag.en_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 8
+    },
+    "$.body.getPageByName.rows[].component.sliders[].informative_tag.fa_title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 8
+    },
+    "$.body.getPageByName.rows[].component.sliders[].is_count_down": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].is_mobile": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].is_web": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].link": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].logo_1": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].logo_2": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].main_logo": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].order": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].play_time": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.sliders[].title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 9
+    },
+    "$.body.getPageByName.rows[].component.tag": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "TagID",
+        "name"
+      ],
+      "samples": 8
+    },
+    "$.body.getPageByName.rows[].component.tag.TagID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 8
+    },
+    "$.body.getPageByName.rows[].component.tag.name": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 8
+    },
+    "$.body.getPageByName.rows[].component.tag_name": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 8
+    },
+    "$.body.getPageByName.rows[].component.title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getPageByName.rows[].component.updated_at": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getPageByName.rows[].component.uri": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 14
+    },
+    "$.body.getPageByName.rows[].component.vod_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 6
+    },
+    "$.body.getPageByName.rows[].order": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 20
+    },
+    "$.body.getPageByName.social_networks": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getPageByName.space_menus": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getPageByName.space_menus[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "SpaceID",
+        "is_enable",
+        "name",
+        "name_fa",
+        "order"
+      ],
+      "samples": 6
+    },
+    "$.body.getPageByName.space_menus[].SpaceID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 6
+    },
+    "$.body.getPageByName.space_menus[].is_enable": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 6
+    },
+    "$.body.getPageByName.space_menus[].name": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 6
+    },
+    "$.body.getPageByName.space_menus[].name_fa": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 6
+    },
+    "$.body.getPageByName.space_menus[].order": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 6
+    },
+    "$.body.getPageByName.tag": {
+      "types": [
+        "NoneType",
+        "object"
+      ],
+      "fields": [
+        "TagID",
+        "name"
+      ],
+      "samples": 2
+    },
+    "$.body.getPageByName.tag.TagID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getPageByName.tag.name": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getPageByName.tag_type": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.getProgram": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "ProgramID",
+        "episodes"
+      ],
+      "samples": 1
+    },
+    "$.body.getProgram.ProgramID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getProgram.episodes": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getProgram.episodes[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "EpisodeID",
+        "copyright",
+        "created_at",
+        "description",
+        "duration",
+        "enable",
+        "image",
+        "tags",
+        "title",
+        "title_en",
+        "updated_at",
+        "view_count"
+      ],
+      "samples": 15
+    },
+    "$.body.getProgram.episodes[].EpisodeID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getProgram.episodes[].copyright": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getProgram.episodes[].created_at": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getProgram.episodes[].description": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getProgram.episodes[].duration": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getProgram.episodes[].enable": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getProgram.episodes[].image": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getProgram.episodes[].tags": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getProgram.episodes[].title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getProgram.episodes[].title_en": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getProgram.episodes[].updated_at": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getProgram.episodes[].view_count": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getTag": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "TagID",
+        "UI",
+        "episodes",
+        "meta",
+        "name",
+        "programs",
+        "type"
+      ],
+      "samples": 1
+    },
+    "$.body.getTag.TagID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getTag.UI": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "cover",
+        "description"
+      ],
+      "samples": 1
+    },
+    "$.body.getTag.UI.cover": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getTag.UI.description": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getTag.episodes": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getTag.episodes[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "EpisodeID",
+        "cover",
+        "description",
+        "duration",
+        "ended_at",
+        "exclude_periods",
+        "id",
+        "image",
+        "page_description",
+        "program",
+        "show_time",
+        "started_at",
+        "thumbnail_time",
+        "title",
+        "view_count"
+      ],
+      "samples": 15
+    },
+    "$.body.getTag.episodes[].EpisodeID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getTag.episodes[].cover": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getTag.episodes[].description": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getTag.episodes[].duration": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getTag.episodes[].ended_at": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getTag.episodes[].exclude_periods": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getTag.episodes[].exclude_periods[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "end_at",
+        "start_at"
+      ],
+      "samples": 12
+    },
+    "$.body.getTag.episodes[].exclude_periods[].end_at": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 12
+    },
+    "$.body.getTag.episodes[].exclude_periods[].start_at": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 12
+    },
+    "$.body.getTag.episodes[].id": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getTag.episodes[].image": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getTag.episodes[].page_description": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getTag.episodes[].program": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "ProgramID",
+        "cover",
+        "id",
+        "is_singleton",
+        "title",
+        "web_background_url",
+        "web_image_url"
+      ],
+      "samples": 15
+    },
+    "$.body.getTag.episodes[].program.ProgramID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getTag.episodes[].program.cover": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getTag.episodes[].program.id": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getTag.episodes[].program.is_singleton": {
+      "types": [
+        "NoneType",
+        "bool"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getTag.episodes[].program.title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getTag.episodes[].program.web_background_url": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getTag.episodes[].program.web_image_url": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getTag.episodes[].show_time": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getTag.episodes[].started_at": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getTag.episodes[].thumbnail_time": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getTag.episodes[].title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getTag.episodes[].view_count": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.getTag.meta": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getTag.name": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getTag.programs": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getTag.programs[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "ProgramID",
+        "background",
+        "cover",
+        "created_at",
+        "image",
+        "is_singleton",
+        "season_count",
+        "summary",
+        "title",
+        "title_en",
+        "view_count",
+        "web_background_url",
+        "web_image_url"
+      ],
+      "samples": 1
+    },
+    "$.body.getTag.programs[].ProgramID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getTag.programs[].background": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getTag.programs[].cover": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getTag.programs[].created_at": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getTag.programs[].image": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getTag.programs[].is_singleton": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getTag.programs[].season_count": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getTag.programs[].summary": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getTag.programs[].title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getTag.programs[].title_en": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getTag.programs[].view_count": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getTag.programs[].web_background_url": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getTag.programs[].web_image_url": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.getTag.type": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryChannel": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 3
+    },
+    "$.body.queryChannel[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "ChannelID",
+        "description",
+        "descriptor",
+        "has_archive",
+        "image_name",
+        "name",
+        "name_english",
+        "priority",
+        "programs",
+        "title",
+        "type"
+      ],
+      "samples": 17
+    },
+    "$.body.queryChannel[].ChannelID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 17
+    },
+    "$.body.queryChannel[].description": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.queryChannel[].descriptor": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.queryChannel[].has_archive": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.queryChannel[].image_name": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.queryChannel[].name": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 17
+    },
+    "$.body.queryChannel[].name_english": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.queryChannel[].priority": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.queryChannel[].programs": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.queryChannel[].programs[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "ProgramID",
+        "background",
+        "cover",
+        "created_at",
+        "enable",
+        "image",
+        "summary",
+        "title",
+        "title_en",
+        "updated_at",
+        "view_count",
+        "web_background_url",
+        "web_image_url"
+      ],
+      "samples": 30
+    },
+    "$.body.queryChannel[].programs[].ProgramID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.queryChannel[].programs[].background": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.queryChannel[].programs[].cover": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.queryChannel[].programs[].created_at": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.queryChannel[].programs[].enable": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.queryChannel[].programs[].image": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.queryChannel[].programs[].summary": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.queryChannel[].programs[].title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.queryChannel[].programs[].title_en": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.queryChannel[].programs[].updated_at": {
+      "types": [
+        "NoneType",
+        "str"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.queryChannel[].programs[].view_count": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.queryChannel[].programs[].web_background_url": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.queryChannel[].programs[].web_image_url": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 30
+    },
+    "$.body.queryChannel[].title": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 2
+    },
+    "$.body.queryChannel[].type": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "descriptor",
+        "name"
+      ],
+      "samples": 15
+    },
+    "$.body.queryChannel[].type.descriptor": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.queryChannel[].type.name": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.queryProgram": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryProgram[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "ProgramID",
+        "background",
+        "channel",
+        "cover",
+        "created_at",
+        "enable",
+        "episodes",
+        "events",
+        "image",
+        "image_mobile",
+        "is_gone",
+        "page_description",
+        "summary",
+        "title",
+        "title_en",
+        "ugcs",
+        "updated_at",
+        "view_count",
+        "web_background_url",
+        "web_image_url"
+      ],
+      "samples": 1
+    },
+    "$.body.queryProgram[].ProgramID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryProgram[].background": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryProgram[].channel": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "ChannelID",
+        "descriptor",
+        "image_name",
+        "name",
+        "name_english",
+        "title"
+      ],
+      "samples": 1
+    },
+    "$.body.queryProgram[].channel.ChannelID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryProgram[].channel.descriptor": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryProgram[].channel.image_name": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryProgram[].channel.name": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryProgram[].channel.name_english": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryProgram[].channel.title": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryProgram[].cover": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryProgram[].created_at": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryProgram[].enable": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryProgram[].episodes": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryProgram[].episodes[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "EpisodeID",
+        "copyright",
+        "created_at",
+        "description",
+        "duration",
+        "enable",
+        "image",
+        "is_clip",
+        "tags",
+        "title",
+        "title_en",
+        "updated_at",
+        "view_count"
+      ],
+      "samples": 15
+    },
+    "$.body.queryProgram[].episodes[].EpisodeID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.queryProgram[].episodes[].copyright": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.queryProgram[].episodes[].created_at": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.queryProgram[].episodes[].description": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.queryProgram[].episodes[].duration": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.queryProgram[].episodes[].enable": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.queryProgram[].episodes[].image": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.queryProgram[].episodes[].is_clip": {
+      "types": [
+        "bool"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.queryProgram[].episodes[].tags": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.queryProgram[].episodes[].tags[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "TagID"
+      ],
+      "samples": 15
+    },
+    "$.body.queryProgram[].episodes[].tags[].TagID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.queryProgram[].episodes[].title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.queryProgram[].episodes[].title_en": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.queryProgram[].episodes[].updated_at": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.queryProgram[].episodes[].view_count": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 15
+    },
+    "$.body.queryProgram[].events": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryProgram[].image": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryProgram[].image_mobile": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryProgram[].is_gone": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryProgram[].page_description": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryProgram[].summary": {
+      "types": [
+        "NoneType"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryProgram[].title": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryProgram[].title_en": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryProgram[].ugcs": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryProgram[].updated_at": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryProgram[].view_count": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryProgram[].web_background_url": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryProgram[].web_image_url": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryRelatedTagsByTagID": {
+      "types": [
+        "array"
+      ],
+      "fields": [],
+      "samples": 1
+    },
+    "$.body.queryRelatedTagsByTagID[]": {
+      "types": [
+        "object"
+      ],
+      "fields": [
+        "TagID",
+        "episode_count",
+        "name",
+        "program_count"
+      ],
+      "samples": 4
+    },
+    "$.body.queryRelatedTagsByTagID[].TagID": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.queryRelatedTagsByTagID[].episode_count": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.queryRelatedTagsByTagID[].name": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.body.queryRelatedTagsByTagID[].program_count": {
+      "types": [
+        "int"
+      ],
+      "fields": [],
+      "samples": 4
+    },
+    "$.message": {
+      "types": [
+        "str"
+      ],
+      "fields": [],
+      "samples": 15
+    }
+  }
+}
