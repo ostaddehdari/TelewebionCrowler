@@ -61,7 +61,16 @@ chown -R root:"$ROLE" "$ROOT"
 python3 -m venv "$ROOT/.venv"
 "$ROOT/.venv/bin/pip" install -r "$ROOT/requirements.txt"
 chown -R root:"$ROLE" "$ROOT/.venv"
+# A previous umask 077 can create root-only venv directories (0700).
+# Give the service group traverse/read permissions before runuser/systemd.
+chmod -R g+rX "$ROOT/.venv"
 chmod 750 "$ROOT"
+
+# Fail early with a clear diagnostic if the service cannot execute Python.
+if ! runuser -u "$ROLE" -- "$ROOT/.venv/bin/python" -c 'import sys; print("Python executable OK:", sys.version.split()[0])'; then
+  echo '[ERROR] newtwcrawler cannot execute its venv Python; check group permissions under /opt/newtwcrawler/.venv' >&2
+  exit 6
+fi
 
 NEWTW_DATABASE_URL="$(sed -n 's/^NEWTW_DATABASE_URL=//p' "$ENV_FILE")"
 runuser -u "$ROLE" -- env NEWTW_DATABASE_URL="$NEWTW_DATABASE_URL" \
