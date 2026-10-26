@@ -66,8 +66,10 @@ chown -R root:"$ROLE" "$ROOT/.venv"
 chmod -R g+rX "$ROOT/.venv"
 chmod 750 "$ROOT"
 
+# Python -m imports from the application directory, not /root/newtwcrawler-installer.
+cd "$ROOT"
 # Fail early with a clear diagnostic if the service cannot execute Python.
-if ! runuser -u "$ROLE" -- "$ROOT/.venv/bin/python" -c 'import sys; print("Python executable OK:", sys.version.split()[0])'; then
+if ! runuser -u "$ROLE" -- "$ROOT/.venv/bin/python" -c 'import newtwcrawler, sys; print("Application import OK:", sys.version.split()[0])'; then
   echo '[ERROR] newtwcrawler cannot execute its venv Python; check group permissions under /opt/newtwcrawler/.venv' >&2
   exit 6
 fi
@@ -150,8 +152,10 @@ if 'location ^~ /newtwcrawler/' in s:
     print('Nginx route already configured; leaving existing site intact')
 else:
     marker='location ^~ /twcrawler/ {'
-    at=s.find(marker)
-    if at==-1 or s.rfind('listen 443 ssl',0,at)==-1:
+    import re
+    tls=re.search(r'(?m)^\s*listen\s+443\s+ssl(?:\s|;)',s)
+    at=s.find(marker,tls.start()) if tls else -1
+    if at==-1:
         raise SystemExit('Expected TLS twcrawler location not found; no Nginx changes')
     insert='''location = /newtwcrawler { return 301 /newtwcrawler/; }
     location ^~ /newtwcrawler/ {
