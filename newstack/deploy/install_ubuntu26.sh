@@ -38,22 +38,14 @@ if [[ ! -f "$ENV_FILE" ]]; then
   runuser -u postgres -- psql -v ON_ERROR_STOP=1 -v dbpass="$PASS" <<'SQL'
 ALTER ROLE newtwcrawler WITH LOGIN PASSWORD :'dbpass';
 SQL
-  while :; do
-    read -r -s -p 'New site manager password (14+ chars): ' WEBPASS; echo
-    [[ ${#WEBPASS} -ge 14 ]] && break
-    echo 'Password too short.'
-  done
-  HASH="$(printf '%s' "$WEBPASS" | PYTHONPATH="$SRC" python3 -c 'from newtwcrawler.auth import hash_password; import sys; print(hash_password(sys.stdin.read()))')"
-  unset WEBPASS
-  SECRET="$(openssl rand -hex 48)"
+  # Public web UI: do not request or configure a site manager password.
+  # The PostgreSQL password is an internal service credential, never exposed to visitors.
   umask 077
   cat > "$ENV_FILE" <<EOF
 NEWTW_DATABASE_URL=postgresql://newtwcrawler:$PASS@127.0.0.1:5432/newtwcrawler
-NEWTW_SESSION_SECRET=$SECRET
-NEWTW_PASSWORD_HASH=$HASH
 EOF
   chown root:"$ROLE" "$ENV_FILE" && chmod 640 "$ENV_FILE"
-  unset PASS SECRET HASH
+  unset PASS
 else
   echo '[KEEP] Existing newtwcrawler credentials preserved'
 fi
@@ -173,11 +165,12 @@ if ! nginx -t; then
   exit 7
 fi
 systemctl reload nginx
-LOGIN_CODE="$(curl -ksS -o /dev/null -w '%{http_code}' --max-time 10 -H 'Host: 5.61.28.187' https://127.0.0.1/newtwcrawler/login)"
-PROTECTED_CODE="$(curl -ksS -o /dev/null -w '%{http_code}' --max-time 10 -H 'Host: 5.61.28.187' https://127.0.0.1/newtwcrawler/dashboard)"
-if [[ "$LOGIN_CODE" != 200 || "$PROTECTED_CODE" != 303 ]]; then
+HOME_CODE="$(curl -ksS -o /dev/null -w '%{http_code}' --max-time 10 -H 'Host: 5.61.28.187' https://127.0.0.1/newtwcrawler/)"
+DASHBOARD_CODE="$(curl -ksS -o /dev/null -w '%{http_code}' --max-time 10 -H 'Host: 5.61.28.187' https://127.0.0.1/newtwcrawler/dashboard)"
+API_CODE="$(curl -ksS -o /dev/null -w '%{http_code}' --max-time 10 -H 'Host: 5.61.28.187' https://127.0.0.1/newtwcrawler/api/stats)"
+if [[ "$HOME_CODE" != 200 || "$DASHBOARD_CODE" != 200 || "$API_CODE" != 200 ]]; then
  cp -a "$BACKUP" "$NGINX"; nginx -t && systemctl reload nginx || true
- echo "Nginx checks failed: login=$LOGIN_CODE protected=$PROTECTED_CODE. Restored config." >&2; exit 8
+ echo "Nginx checks failed: home=$HOME_CODE dashboard=$DASHBOARD_CODE api=$API_CODE. Restored config." >&2; exit 8
 fi
 
 # First pilot extraction is a small bounded batch; timer stays disabled until review.
@@ -186,8 +179,8 @@ systemctl start newtwcrawler-fetch.service || true
 journalctl -u newtwcrawler-fetch.service -n 25 --no-pager || true
 cat <<INFO
 SUCCESS - independent app initialized.
-LOGIN: https://5.61.28.187/newtwcrawler/login
-STATUS: https://5.61.28.187/newtwcrawler/dashboard
+PUBLIC ARCHIVE: https://5.61.28.187/newtwcrawler/
+PUBLIC STATUS: https://5.61.28.187/newtwcrawler/dashboard
 DATABASE: newtwcrawler (separate from twcrawler)
 Nginx backup: $BACKUP
 The timer is NOT yet enabled. Review pilot logs before enabling:
