@@ -2,17 +2,15 @@ from __future__ import annotations
 from collections import Counter
 from functools import lru_cache
 import json
-import os
 import re
 import time
 from pathlib import Path
 from urllib.parse import quote
-from fastapi import FastAPI, Request, Query, Form, HTTPException
-from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse
+from fastapi import FastAPI, Request, Query, HTTPException
+from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from .db import connect
-from .auth import COOKIE,verify,new_session,is_logged
 from .config import BASE_PATH
 
 ROOT=Path(__file__).resolve().parent
@@ -30,20 +28,14 @@ def render(request,file,**kwargs):
     return tpl.TemplateResponse(request,file,{'kinds':TYPE_NAMES,**kwargs})
 
 @app.middleware('http')
-async def gate(req:Request,call_next):
-    path=req.url.path
-    if path not in ('/health','/login') and not path.startswith('/static/'):
-        if not is_logged(req.cookies.get(COOKIE)):
-            if path.startswith('/api/') or req.method!='GET':
-                resp=JSONResponse({'detail':'ورود لازم است'},status_code=401)
-            else:resp=RedirectResponse(BASE_PATH+'/login',status_code=303)
-        else:resp=await call_next(req)
-    else:resp=await call_next(req)
-    resp.headers['Cache-Control']='private, no-store'
-    resp.headers['X-Content-Type-Options']='nosniff'
-    resp.headers['X-Frame-Options']='DENY'
-    resp.headers['Referrer-Policy']='strict-origin-when-cross-origin'
-    return resp
+async def public_headers(req: Request, call_next):
+    """Read-only catalog is deliberately public; no auth/session or write actions."""
+    response = await call_next(req)
+    response.headers['Cache-Control'] = 'private, no-store' if req.url.path in ('/responses',) or req.url.path.startswith('/response/') else 'public, max-age=5'
+    response.headers['X-Content-Type-Options'] = 'nosniff'
+    response.headers['X-Frame-Options'] = 'DENY'
+    response.headers['Referrer-Policy'] = 'strict-origin-when-cross-origin'
+    return response
 
 @app.get('/health')
 def health():
@@ -51,35 +43,6 @@ def health():
         with connect() as c:c.execute('SELECT 1')
         return {'status':'ok'}
     except Exception:raise HTTPException(503)
-
-@app.get('/login',response_class=HTMLResponse)
-def login_page(request:Request):
-    if is_logged(request.cookies.get(COOKIE)):
-        return RedirectResponse(BASE_PATH+'/',status_code=303)
-    return render(request,'login.html',error='')
-
-_FAILED={}
-@app.post('/login')
-def login(request:Request,username:str=Form(''),password:str=Form('')):
-    ip=request.client.host if request.client else 'unknown'
-    now=time.monotonic()
-    recent=[t for t in _FAILED.get(ip,[]) if now-t<300]
-    if len(recent)>=6:return render(request,'login.html',error='تلاش‌های ورود بیش از حد است؛ بعداً امتحان کنید.')
-    if username!='manager' or not verify(password):
-        _FAILED[ip]=(recent+[now])[-6:]
-        response=render(request,'login.html',error='نام کاربری یا رمز عبور نادرست است.')
-        response.status_code=401
-        return response
-    _FAILED.pop(ip,None)
-    resp=RedirectResponse(BASE_PATH+'/',status_code=303)
-    resp.set_cookie(COOKIE,new_session(),secure=True,httponly=True,samesite='strict',max_age=28800,path=BASE_PATH+'/')
-    return resp
-
-@app.post('/logout')
-def logout():
-    resp=RedirectResponse(BASE_PATH+'/login',status_code=303)
-    resp.delete_cookie(COOKIE,path=BASE_PATH+'/')
-    return resp
 
 STATS_CACHE={'at':0,'value':None}
 def statistics():
@@ -131,10 +94,18 @@ def item(request:Request,kind:str,entity_id:str):
     return render(request,'item.html',entry=row,children=links,parents=parent,
                   raw_json=json.dumps(mask(row['raw']),ensure_ascii=False,indent=2))
 
-SECRET_FIELDS={'content_token','authorization','access_token','refresh_token','secret','password','stream_token'}
+SECRET_FIELDS={'content_token','authorization','access_token','refresh_token','secret','password','stream_token',
+               'cookie','set_cookie','session','client_secret','api_key','apikey','signature'}
 def mask(node):
-    if isinstance(node,dict):return {k:('[محافظت‌شده؛ در دیتابیس ثبت شده]' if k.lower() in SECRET_FIELDS else mask(v)) for k,v in node.items()}
+    """Preserve every field name while hiding secret values in this public viewer."""
+    if isinstance(node,dict):
+        return {k:('[محافظت‌شده؛ در دیتابیس ذخیره شده]' if
+                   any(part in k.lower() for part in ('token','secret','password','authorization','cookie','credential'))
+                   or k.lower() in SECRET_FIELDS else mask(v)) for k,v in node.items()}
     if isinstance(node,list):return [mask(x) for x in node]
+    if isinstance(node,str) and (re.match(r'^eyJ[A-Za-z0-9_-]{12,}\.eyJ',node) or
+         re.search(r'[?&](?:token|auth|signature|key)=',node,re.I)):
+        return '[محافظت‌شده؛ در دیتابیس ذخیره شده]'
     return node
 
 @app.get('/dashboard',response_class=HTMLResponse)
