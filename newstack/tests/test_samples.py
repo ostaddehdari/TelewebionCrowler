@@ -23,7 +23,6 @@ if 'psycopg' not in sys.modules:
 
 from newtwcrawler.ingest import unique_kind, source_kind, doc_hash, index_document
 from newtwcrawler.crawler import pick_rows, params_key
-from newtwcrawler.auth import hash_password
 
 class FakeDB:
     def __init__(self):self.sql=[]
@@ -68,6 +67,47 @@ def test_clip_schema_unknown_is_not_silently_complete():
     else:raise AssertionError('Unknown shape must be reviewed')
 
 
-def test_ids_and_password():
+def test_public_archive_routes_and_secret_masking():
     assert params_key('page',{'Name':'kids'})==params_key('page',{'Name':'kids'})
-    assert hash_password('secure password')!='secure password'
+    from newtwcrawler.web import app, mask
+    routes = {getattr(r, 'path', ''):r for r in app.routes}
+    assert '/login' not in routes and '/logout' not in routes
+    assert '/' in routes and '/dashboard' in routes and '/api/stats' in routes
+    assert all('GET' in (getattr(routes[p], 'methods', set()) or set()) for p in ('/', '/dashboard', '/api/stats'))
+    private = {'content_token':'eyJabc.xyz.secret','children':[{'access_token':'TEST','safe_title':'سلام'}]}
+    sanitized = mask(private)
+    assert 'محافظت' in sanitized['content_token']
+    assert 'محافظت' in sanitized['children'][0]['access_token']
+    assert sanitized['children'][0]['safe_title']=='سلام'
+
+
+def test_public_http_pages_without_session(monkeypatch):
+    from contextlib import contextmanager
+    from fastapi.testclient import TestClient
+    from newtwcrawler import web
+
+    class Result:
+        def __init__(self, query):
+            self.query = query.lower()
+        def fetchone(self):
+            return {'n':0} if 'count(*) as n' in self.query else None
+        def fetchall(self):
+            return []
+        def __iter__(self):
+            return iter([])
+    class DB:
+        def execute(self, query, args=None):
+            return Result(query)
+    @contextmanager
+    def dummy_connect():
+        yield DB()
+    monkeypatch.setattr(web, 'connect', dummy_connect)
+    monkeypatch.setattr(web, 'statistics', lambda: {'entities':{}, 'episodes':0, 'clips':0,
+                   'undetermined':0, 'queue':{}, 'responses':0, 'last':None})
+    with TestClient(web.app) as client:
+        assert client.get('/').status_code == 200
+        assert client.get('/dashboard').status_code == 200
+        assert client.get('/api/stats').status_code == 200
+        assert client.get('/login').status_code == 404
+        assert client.post('/logout').status_code == 404
+        assert 'دسترسی آزاد' in client.get('/').text
