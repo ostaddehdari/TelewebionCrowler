@@ -53,6 +53,8 @@ fi
 install -d -m 750 -o root -g "$ROLE" "$ROOT"
 cp -a "$SRC/newtwcrawler" "$ROOT/"
 cp -a "$SRC/requirements.txt" "$ROOT/requirements.txt"
+# Clear unused V1 sign-in files if they remain from an earlier extraction.
+rm -f "$ROOT/newtwcrawler/auth.py" "$ROOT/newtwcrawler/templates/login.html"
 find "$ROOT/newtwcrawler" -type f -exec chmod 644 {} +
 find "$ROOT/newtwcrawler" -type d -exec chmod 755 {} +
 chown -R root:"$ROLE" "$ROOT"
