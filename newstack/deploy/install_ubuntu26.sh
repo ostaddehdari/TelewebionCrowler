@@ -181,7 +181,7 @@ if [[ "$LOGIN_CODE" != 200 || "$PROTECTED_CODE" != 303 ]]; then
 fi
 
 # First pilot extraction is a small bounded batch; timer stays disabled until review.
-echo '[PILOT] Running 12 limited direct HTTP requests'
+echo '[PILOT] Running up to 40 limited direct HTTP requests'
 systemctl start newtwcrawler-fetch.service || true
 journalctl -u newtwcrawler-fetch.service -n 25 --no-pager || true
 cat <<INFO
