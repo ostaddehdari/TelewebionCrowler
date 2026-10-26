@@ -142,6 +142,8 @@ def main():
         ap.error('channel descriptor invalid')
     jobs = [
         ('program detail', '/kandoo/program/getProgramPage/', {'ProgramID': args.program}),
+        *[(f'program clips offset={i}', '/kandoo/program/getClipsByProgramID/',
+           {'ProgramID':args.program,'First':24,'Offset':i}) for i in (0,24,48)],
         *[(f'channel page offset={i}', '/kandoo/channel/getProgramListByChannel/',
            {'Descriptor':args.channel, 'First':24,'Offset':i}) for i in (0,24,48)],
         *[(f'kids serial offset={i}', '/kandoo/vod/content/get-kids-serial',
